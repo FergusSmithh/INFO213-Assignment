@@ -5,6 +5,8 @@ ProjectSimpleBankModel subschemaOf Assignment completeDefinition;
 localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 	setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:10:55.421;
+	14345 "English (Indonesia)" _cloneOf 5129;
+	setModifiedTimeStamp "<unknown>" "" 2024:05:19:12:51:02;
 typeHeaders
 	SimpleBankModel subclassOf Assignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2118;
 	Bank subclassOf Object highestSubId = 2, highestOrdinal = 4, number = 2120;
@@ -128,7 +130,7 @@ without inverses and requires manual maintenance.`
 		firstName:                     String[21] readonly, number = 1, ordinal = 1;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:21:00:18.847;
 		lastName:                      String[21] readonly, number = 2, ordinal = 2;
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:21:00:35.529;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:22:04:48.988;
 		number:                        Integer protected, number = 8, ordinal = 8;
 		setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:55:33.005;
 		phone:                         String[16] protected, number = 3, ordinal = 3;
@@ -181,7 +183,7 @@ without inverses and requires manual maintenance.`
 	(
 	jadeMethodDefinitions
 		createCustomersFromFile() number = 1006;
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:03:28:12:13:25.460;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:56:53.644;
 		createTestAccounts() updating, number = 1009;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:20:40:34.665;
 		createTestCustomer() updating, number = 1001;
@@ -541,7 +543,7 @@ begin
 	
 	// Prepare the input file for reading the data
 	create inputFile transient;
-	inputFile.fileName := "P:\INFO213\Tutorial W03\chch_customers.txt";
+	inputFile.fileName := "C:\Users\fergu\OneDrive\Documents\INFO213\W5\chch_customers.txt";
 	
 	//This line prevents a specific error message which only some of you may experience.
 	inputFile.kind := File.Kind_Unknown_Text;

@@ -5,6 +5,8 @@ ProjectSimpleBankView subschemaOf ProjectSimpleBankModel completeDefinition;
 localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 	setModifiedTimeStamp "cza14" "22.0.03" 2024:03:13:16:39:52.846;
+	14345 "English (Indonesia)" _cloneOf 5129;
+	setModifiedTimeStamp "<unknown>" "" 2024:05:19:12:51:06;
 typeHeaders
 	SimpleBankView subclassOf SimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2130;
 	GSimpleBankView subclassOf GSimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2138;
@@ -13,7 +15,8 @@ typeHeaders
 	CustomerAdd subclassOf CustomerDetails transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 4, number = 2141;
 	CustomerEdit subclassOf CustomerDetails transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2189;
 	CustomerList subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 3, number = 2188;
-	MainMenu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 3, number = 2187;
+	ExistingCustomer subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2106;
+	Main_Menu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 4, number = 2099;
 membershipDefinitions
 typeDefinitions
 	Object completeDefinition
@@ -65,8 +68,8 @@ typeDefinitions
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:17:44:20.273;
 		runCustomerDetailsForm() number = 1008;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:15:07:15.645;
-		runMainMenu() number = 1015;
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:15:07:07.427;
+		runMain_Menu() number = 1015;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:13:15:01.614;
 	)
 	WebSession completeDefinition
 	(
@@ -95,7 +98,7 @@ typeDefinitions
 	)
 	CustomerDetails completeDefinition
 	(
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:01:16:53:36.834;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:50:04.719;
 	referenceDefinitions
 		btnCancel:                     Button  number = 2, ordinal = 2;
 		setModifiedTimeStamp "cza14" "16.0.01" 2017:02:27:18:20:23.280;
@@ -141,14 +144,14 @@ typeDefinitions
 	)
 	CustomerAdd completeDefinition
 	(
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:15:30:37.994;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:22:06:29.867;
 	jadeMethodDefinitions
 		btnOK_click(btn: Button input) updating, number = 1002;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:17:39:06.070;
 		createCustomer() number = 1001;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:20:42:32.870;
 		load() updating, number = 1003;
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:03:29:15:17:55.755;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:13:14:57.745;
 	eventMethodMappings
 		btnOK_click = click of Button;
 		load = load of Form;
@@ -197,27 +200,63 @@ typeDefinitions
 		load = load of Form;
 		lstCustomers_displayRow = displayRow of ListBox;
 	)
-	MainMenu completeDefinition
+	ExistingCustomer completeDefinition
 	(
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:02:21:53:32.318;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:53:25.854;
 	referenceDefinitions
-		mnuCustomer:                   MenuItem  number = 1, ordinal = 1;
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:15:09:18.581;
-		mnuCustomerAdd:                MenuItem  number = 2, ordinal = 2;
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:15:09:18.581;
-		mnuCustomerList:               MenuItem  number = 3, ordinal = 3;
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:16:10:22.040;
+		btnEdit:                       Button  number = 11, ordinal = 11;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:53:25.853;
+		btnsearch:                     Button  number = 9, ordinal = 9;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.870;
+		lbAccountNumber:               Label  number = 7, ordinal = 7;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.869;
+		lbCustomersList:               Label  number = 3, ordinal = 3;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.864;
+		lbLastName:                    Label  number = 5, ordinal = 5;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.868;
+		lbUcBank:                      Label  number = 2, ordinal = 2;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.863;
+		listCustomers:                 ListBox  number = 1, ordinal = 1;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.852;
+		searchCustomers:               GroupBox  number = 4, ordinal = 4;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.867;
+		statusLine1:                   StatusLine  number = 10, ordinal = 10;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.870;
+		txtlastName:                   TextBox  number = 6, ordinal = 6;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.869;
+		txtlastName_1:                 TextBox  number = 8, ordinal = 8;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.870;
 	jadeMethodDefinitions
-		load() updating, number = 1002;
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:01:16:58:54.910;
-		mnuCustomerAdd_click(menuItem: MenuItem input) updating, number = 1001;
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:01:17:15:18.994;
-		mnuCustomerList_click(menuItem: MenuItem input) updating, number = 1003;
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:16:11:34.930;
+		listCustomers_displayRow(
+			listbox: ListBox input; 
+			cust: Customer; 
+			lstIndex: Integer; 
+			bcontinue: Boolean io): String updating, number = 1001;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:22:09:23.840;
 	eventMethodMappings
-		load = load of Form;
-		mnuCustomerAdd_click = click of MenuItem;
-		mnuCustomerList_click = click of MenuItem;
+		listCustomers_displayRow = displayRow of ListBox;
+	)
+	Main_Menu completeDefinition
+	(
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:50:05.864;
+	referenceDefinitions
+		btnExistingCustomer:           Button  number = 2, ordinal = 2;
+		setModifiedTimeStamp "justi" "22.0.03" 2024:05:17:16:17:46.314;
+		btnNewCustomer:                Button  number = 1, ordinal = 1;
+		setModifiedTimeStamp "justi" "22.0.03" 2024:05:17:16:17:46.311;
+		lblUCStaffPortal:              Label  number = 3, ordinal = 3;
+		setModifiedTimeStamp "justi" "22.0.03" 2024:05:17:16:17:46.315;
+	jadeMethodDefinitions
+		btnExistingCustomer_click(btn: Button input) updating, number = 1003;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:51:01.615;
+		btnNewCustomer_click(btn: Button input) updating, number = 1001;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:13:13:18.467;
+		click(menuItem: MenuItem input) updating, number = 1002;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:13:11:33.770;
+	eventMethodMappings
+		btnExistingCustomer_click = click of Button;
+		btnNewCustomer_click = click of Button;
+		click = click of Form;
 	)
 databaseDefinitions
 	ProjectSimpleBankViewDb
@@ -306,13 +345,12 @@ begin
 
 end;
 }
-runMainMenu
+runMain_Menu
 {
-runMainMenu();
+runMain_Menu();
 
 vars
-	form : MainMenu;
-		
+	form :Main_Menu;
 begin
 	app.initialize();
 	create form transient;
@@ -458,7 +496,7 @@ load() updating;
 vars
 
 begin
-	app.mdiFrame := MainMenu;
+	app.mdiFrame := Main_Menu;
 
 end;
 }
@@ -571,42 +609,54 @@ begin
 end;
 }
 	)
-	MainMenu (
+	ExistingCustomer (
 	jadeMethodSources
-load
+listCustomers_displayRow
 {
-load() updating;
+listCustomers_displayRow(listbox: ListBox input; cust: Customer; lstIndex: Integer; bcontinue: Boolean io):String updating;
+
+vars
 
 begin
-	// This is to identify this as the parent MDI form.
-	app.mdiFrame := MainMenu;
-
+	return cust.getFullName();
 end;
 }
-mnuCustomerAdd_click
+	)
+	Main_Menu (
+	jadeMethodSources
+btnExistingCustomer_click
 {
-mnuCustomerAdd_click(menuItem: MenuItem input) updating;
+btnExistingCustomer_click(btn: Button input) updating;
+
+vars
+	form : ExistingCustomer;
+		
+begin
+	create form transient;
+	form.show();
+end;
+}
+btnNewCustomer_click
+{
+btnNewCustomer_click(btn: Button input) updating;
 
 vars
 	form : CustomerAdd;
-
+		
 begin
 	create form transient;
 	form.show();
-	
 end;
 }
-mnuCustomerList_click
+click
 {
-mnuCustomerList_click(menuItem: MenuItem input) updating;
+click(menuItem: MenuItem input) updating;
 
 vars
-	form : CustomerList;
-	
-begin
+	form : CustomerAdd;
+begin 
 	create form transient;
 	form.show();
-	
 end;
 }
 	)
