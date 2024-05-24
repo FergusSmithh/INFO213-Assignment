@@ -60,7 +60,7 @@
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
 		<ignoreSkinAllControls>false</ignoreSkinAllControls>
-		<left>211</left>
+		<left>33</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -86,7 +86,7 @@
 		<showMdiPinMenu>false</showMdiPinMenu>
 		<skinCategoryName/>
 		<tag/>
-		<top>0</top>
+		<top>134</top>
 		<userScript/>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
@@ -97,7 +97,7 @@
 		<width>776</width>
 		<windowState>0</windowState>
 		<controlList>
-			<Button name="btnAdd">
+			<Button name="btnClear">
 				<autoSize>1</autoSize>
 				<backBrush/>
 				<backBrushStyle>0</backBrushStyle>
@@ -107,7 +107,7 @@
 				<bubbleHelp/>
 				<buttonPicture>0</buttonPicture>
 				<cancel>false</cancel>
-				<caption>Add Customer</caption>
+				<caption>Clear</caption>
 				<default>false</default>
 				<description/>
 				<disableReason/>
@@ -128,14 +128,75 @@
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>223</left>
+				<left>324</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnClear</name>
+				<parent name="BrowseCustomers" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>255</parentBottomOffset>
+				<parentRightOffset>348</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>17</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>147</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
+			<Button name="btnAdd">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Add</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="BrowseCustomers" />
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>445</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnAdd</name>
 				<parent name="BrowseCustomers" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>21</parentBottomOffset>
-				<parentRightOffset>449</parentRightOffset>
+				<parentRightOffset>227</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -189,14 +250,14 @@
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>629</left>
+				<left>641</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnView</name>
 				<parent name="BrowseCustomers" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>21</parentBottomOffset>
-				<parentRightOffset>43</parentRightOffset>
+				<parentRightOffset>31</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -314,19 +375,19 @@
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
 				<form name="BrowseCustomers" />
-				<height>22</height>
+				<height>20</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>475</left>
+				<left>542</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnEdit</name>
 				<parent name="BrowseCustomers" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>20</parentBottomOffset>
-				<parentRightOffset>197</parentRightOffset>
+				<parentBottomOffset>22</parentBottomOffset>
+				<parentRightOffset>130</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -349,135 +410,6 @@
 				<webFileName/>
 				<width>88</width>
 			</Button>
-			<TextBox name="txtAccountNumber">
-				<alignment>0</alignment>
-				<autoTab>false</autoTab>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<case>0</case>
-				<dataType>0</dataType>
-				<decimals>0</decimals>
-				<description/>
-				<disableReason/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="BrowseCustomers" />
-				<formatOut/>
-				<height>22</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hintBackColor>-2147483648</hintBackColor>
-				<hintForeColor>-2147483648</hintForeColor>
-				<hintText/>
-				<ignoreSkin>false</ignoreSkin>
-				<index>0</index>
-				<integralHeight>false</integralHeight>
-				<left>30</left>
-				<maxLength>0</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>txtAccountNumber</name>
-				<parent name="BrowseCustomers" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>238</parentBottomOffset>
-				<parentRightOffset>490</parentRightOffset>
-				<passwordField>false</passwordField>
-				<readOnly>false</readOnly>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<scrollBars>0</scrollBars>
-				<scrollHorizontal>false</scrollHorizontal>
-				<scrollVertical>false</scrollVertical>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<selectionStyle>0</selectionStyle>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>10</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<text/>
-				<textOffset>0</textOffset>
-				<top>162</top>
-				<userScript/>
-				<visible>true</visible>
-				<wantReturn>false</wantReturn>
-				<webInputType/>
-				<width>240</width>
-			</TextBox>
-			<Label name="lbAccountNumber">
-				<alignment>1</alignment>
-				<autoSize>true</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483633</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<caption>Account Number:</caption>
-				<description/>
-				<disableReason/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>true</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName>Tahoma</fontName>
-				<fontSize>12</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="BrowseCustomers" />
-				<formatOut/>
-				<height>19</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hyperlink/>
-				<ignoreSkin>false</ignoreSkin>
-				<index>0</index>
-				<left>30</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>lbAccountNumber</name>
-				<noPrefix>false</noPrefix>
-				<parent name="BrowseCustomers" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>266</parentBottomOffset>
-				<parentRightOffset>590</parentRightOffset>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>9</tabIndex>
-				<tabStop>false</tabStop>
-				<tag/>
-				<top>137</top>
-				<transparent>true</transparent>
-				<userScript/>
-				<visible>true</visible>
-				<width>140</width>
-				<wordWrap>false</wordWrap>
-			</Label>
 			<Label name="lbLastName">
 				<alignment>1</alignment>
 				<autoSize>true</autoSize>
@@ -516,7 +448,7 @@
 				<noPrefix>false</noPrefix>
 				<parent name="BrowseCustomers" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>315</parentBottomOffset>
+				<parentBottomOffset>322</parentBottomOffset>
 				<parentRightOffset>638</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
@@ -529,7 +461,7 @@
 				<tabIndex>6</tabIndex>
 				<tabStop>false</tabStop>
 				<tag/>
-				<top>88</top>
+				<top>81</top>
 				<transparent>true</transparent>
 				<userScript/>
 				<visible>true</visible>
@@ -559,7 +491,7 @@
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
 				<form name="BrowseCustomers" />
-				<height>231</height>
+				<height>137</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
@@ -570,7 +502,7 @@
 				<name>searchCustomers</name>
 				<parent name="BrowseCustomers" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>135</parentBottomOffset>
+				<parentBottomOffset>229</parentBottomOffset>
 				<parentRightOffset>335</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
@@ -723,7 +655,7 @@
 				<boundaryColor>-2147483633</boundaryColor>
 				<boundaryWidth>1</boundaryWidth>
 				<bubbleHelp/>
-				<caption>StatusLine1</caption>
+				<caption/>
 				<clipControls>true</clipControls>
 				<description/>
 				<disableReason/>
@@ -763,7 +695,7 @@
 				<tabIndex>12</tabIndex>
 				<tabStop>false</tabStop>
 				<tag/>
-				<top>210</top>
+				<top>116</top>
 				<userScript/>
 				<visible>true</visible>
 				<width>407</width>
@@ -806,7 +738,7 @@
 				<name>btnsearch</name>
 				<parent name="searchCustomers" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>50</parentBottomOffset>
+				<parentBottomOffset>27</parentBottomOffset>
 				<parentRightOffset>267</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
@@ -823,7 +755,7 @@
 				<tabIndex>11</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>151</top>
+				<top>80</top>
 				<userScript/>
 				<value>false</value>
 				<visible>true</visible>
@@ -873,7 +805,7 @@
 				<name>txtlastName</name>
 				<parent name="searchCustomers" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>154</parentBottomOffset>
+				<parentBottomOffset>65</parentBottomOffset>
 				<parentRightOffset>155</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
@@ -894,7 +826,7 @@
 				<tag/>
 				<text/>
 				<textOffset>0</textOffset>
-				<top>55</top>
+				<top>50</top>
 				<userScript/>
 				<visible>true</visible>
 				<wantReturn>false</wantReturn>
@@ -927,7 +859,7 @@
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
 		<ignoreSkinAllControls>false</ignoreSkinAllControls>
-		<left>704</left>
+		<left>560</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -953,7 +885,7 @@
 		<showMdiPinMenu>false</showMdiPinMenu>
 		<skinCategoryName/>
 		<tag/>
-		<top>34</top>
+		<top>23</top>
 		<userScript/>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
@@ -964,6 +896,239 @@
 		<width>777</width>
 		<windowState>0</windowState>
 		<controlList>
+			<Button name="btnEdit">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Edit</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="CustomerData" />
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>547</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnEdit</name>
+				<parent name="CustomerData" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>9</parentBottomOffset>
+				<parentRightOffset>126</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>30</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>376</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
+			<Button name="btnClear">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Clear</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="CustomerData" />
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>332</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnClear</name>
+				<parent name="CustomerData" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>28</parentBottomOffset>
+				<parentRightOffset>341</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>29</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>357</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
+			<Label name="lbAccountNumber">
+				<alignment>1</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Account Number:</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>true</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>12</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="CustomerData" />
+				<formatOut/>
+				<height>19</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>37</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbAccountNumber</name>
+				<noPrefix>false</noPrefix>
+				<parent name="CustomerData" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>91</parentBottomOffset>
+				<parentRightOffset>584</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>6</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>295</top>
+				<transparent>true</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>140</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<GroupBox name="searchAccounts">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<caption>SearchAccounts</caption>
+				<clipControls>true</clipControls>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="CustomerData" />
+				<height>129</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>24</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>searchAccounts</name>
+				<parent name="CustomerData" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>3</parentBottomOffset>
+				<parentRightOffset>330</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>25</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>273</top>
+				<transparent>false</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>407</width>
+			</GroupBox>
 			<Button name="btnDelete">
 				<autoSize>1</autoSize>
 				<backBrush/>
@@ -995,14 +1160,14 @@
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>611</left>
+				<left>644</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnDelete</name>
 				<parent name="CustomerData" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>8</parentBottomOffset>
-				<parentRightOffset>62</parentRightOffset>
+				<parentRightOffset>29</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -1056,14 +1221,14 @@
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>477</left>
+				<left>450</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnAdd</name>
 				<parent name="CustomerData" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>8</parentBottomOffset>
-				<parentRightOffset>196</parentRightOffset>
+				<parentRightOffset>223</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -2083,7 +2248,7 @@
 				<noPrefix>false</noPrefix>
 				<parent name="CustomerData" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>365</parentBottomOffset>
+				<parentBottomOffset>363</parentBottomOffset>
 				<parentRightOffset>644</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
@@ -2096,13 +2261,209 @@
 				<tabIndex>3</tabIndex>
 				<tabStop>false</tabStop>
 				<tag/>
-				<top>15</top>
+				<top>17</top>
 				<transparent>true</transparent>
 				<userScript/>
 				<visible>true</visible>
 				<width>89</width>
 				<wordWrap>false</wordWrap>
 			</Label>
+			<StatusLine name="statusLine1">
+				<alignment>0</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<bevelColor>-2147483628</bevelColor>
+				<bevelInner>1</bevelInner>
+				<bevelInnerWidth>1</bevelInnerWidth>
+				<bevelOuter>2</bevelOuter>
+				<bevelOuterWidth>1</bevelOuterWidth>
+				<bevelShadowColor>-2147483632</bevelShadowColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>1</borderStyle>
+				<boundaryBrush>0</boundaryBrush>
+				<boundaryColor>-2147483633</boundaryColor>
+				<boundaryWidth>1</boundaryWidth>
+				<bubbleHelp/>
+				<caption/>
+				<clipControls>true</clipControls>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="CustomerData" />
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>0</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>statusLine1</name>
+				<parent name="searchAccounts" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>0</parentBottomOffset>
+				<parentRightOffset>0</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>26</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>108</top>
+				<userScript/>
+				<visible>true</visible>
+				<width>407</width>
+				<wordWrap>false</wordWrap>
+			</StatusLine>
+			<Button name="btnsearch_1">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Search</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="CustomerData" />
+				<height>30</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>12</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnsearch_1</name>
+				<parent name="searchAccounts" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>24</parentBottomOffset>
+				<parentRightOffset>267</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>27</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>75</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>128</width>
+			</Button>
+			<TextBox name="txtlastName">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="CustomerData" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<integralHeight>false</integralHeight>
+				<left>12</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtlastName</name>
+				<parent name="searchAccounts" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>61</parentBottomOffset>
+				<parentRightOffset>155</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>28</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>46</top>
+				<userScript/>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<webInputType/>
+				<width>240</width>
+			</TextBox>
 		</controlList>
 		<menuList>
 		</menuList>
@@ -2166,6 +2527,67 @@
 		<width>386</width>
 		<windowState>0</windowState>
 		<controlList>
+			<Button name="btndelete">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Delete</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="CustomerDetails" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>160</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btndelete</name>
+				<parent name="CustomerDetails" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>50</parentBottomOffset>
+				<parentRightOffset>122</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>16</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>243</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
 			<TextBox name="txtCity">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
@@ -3035,14 +3457,14 @@
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>225</left>
+				<left>256</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnCancel</name>
 				<parent name="CustomerDetails" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>51</parentBottomOffset>
-				<parentRightOffset>57</parentRightOffset>
+				<parentRightOffset>26</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -3096,14 +3518,14 @@
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>127</left>
+				<left>65</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnOK</name>
 				<parent name="CustomerDetails" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>51</parentBottomOffset>
-				<parentRightOffset>155</parentRightOffset>
+				<parentRightOffset>217</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>

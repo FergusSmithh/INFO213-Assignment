@@ -6,7 +6,7 @@ localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 	setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:10:55.421;
 	14345 "English (Indonesia)" _cloneOf 5129;
-	setModifiedTimeStamp "<unknown>" "" 2024:05:21:22:05:14;
+	setModifiedTimeStamp "<unknown>" "" 2024:05:24:14:26:20;
 typeHeaders
 	SimpleBankModel subclassOf Assignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2118;
 	Bank subclassOf Object highestSubId = 2, highestOrdinal = 4, number = 2120;
@@ -183,7 +183,7 @@ without inverses and requires manual maintenance.`
 	(
 	jadeMethodDefinitions
 		createCustomersFromFile() number = 1006;
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:56:53.644;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:24:15:40:57.291;
 		createTestAccounts() updating, number = 1009;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:20:40:34.665;
 		createTestCustomer() updating, number = 1001;
@@ -273,9 +273,9 @@ databaseDefinitions
 	databaseFileDefinitions
 		"simplebankaccount" number = 64;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:10:18:08.973;
-		"simplebankcustomer" number = 54;
+		"simplebankcustomer" number = 57;
 		setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:39:06.027;
-		"simplebankmodel" number = 53;
+		"simplebankmodel" number = 62;
 		setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:10:55.457;
 	defaultFileDefinition "simplebankmodel";
 	classMapDefinitions
@@ -537,7 +537,7 @@ vars
 	fileLine : String;
 	customer : Customer;
 
-begin
+begin	
 	// Make sure the root object (instance of the class Bank) is available
 	app.initialize();
 	
