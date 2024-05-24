@@ -6,17 +6,19 @@ localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 	setModifiedTimeStamp "cza14" "22.0.03" 2024:03:13:16:39:52.846;
 	14345 "English (Indonesia)" _cloneOf 5129;
-	setModifiedTimeStamp "<unknown>" "" 2024:05:19:12:51:06;
+	setModifiedTimeStamp "<unknown>" "" 2024:05:21:22:05:19;
 typeHeaders
 	SimpleBankView subclassOf SimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2130;
 	GSimpleBankView subclassOf GSimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2138;
 	SSimpleBankView subclassOf SSimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2139;
+	BrowseCustomers subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 14, number = 2090;
+	CustomerData subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 19, number = 2098;
 	CustomerDetails subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 15, number = 2140;
 	CustomerAdd subclassOf CustomerDetails transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 4, number = 2141;
 	CustomerEdit subclassOf CustomerDetails transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2189;
 	CustomerList subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 3, number = 2188;
 	ExistingCustomer subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2106;
-	Main_Menu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 4, number = 2099;
+	Main_Menu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2099;
 membershipDefinitions
 typeDefinitions
 	Object completeDefinition
@@ -68,8 +70,10 @@ typeDefinitions
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:17:44:20.273;
 		runCustomerDetailsForm() number = 1008;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:15:07:15.645;
+		runExisitingCustomer() number = 1016;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:00:58.499;
 		runMain_Menu() number = 1015;
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:13:15:01.614;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:57:37.441;
 	)
 	WebSession completeDefinition
 	(
@@ -95,6 +99,111 @@ typeDefinitions
 	)
 	Form completeDefinition
 	(
+	)
+	BrowseCustomers completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:23:14:53:42.149;
+	referenceDefinitions
+		btnAdd:                        Button  number = 13, ordinal = 14;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:21:22:25:55.311;
+		btnEdit:                       Button  number = 11, ordinal = 11;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:53:25.853;
+		btnView:                       Button  number = 12, ordinal = 13;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:24:21.027;
+		btnsearch:                     Button  number = 9, ordinal = 9;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.870;
+		lbAccountNumber:               Label  number = 7, ordinal = 7;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.869;
+		lbCustomersList:               Label  number = 3, ordinal = 3;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.864;
+		lbLastName:                    Label  number = 5, ordinal = 5;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.868;
+		lbUcBank:                      Label  number = 2, ordinal = 2;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.863;
+		listCustomers:                 ListBox  number = 1, ordinal = 12;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:19:36:28.873;
+		searchCustomers:               GroupBox  number = 4, ordinal = 4;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.867;
+		statusLine1:                   StatusLine  number = 10, ordinal = 10;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.870;
+		txtAccountNumber:              TextBox  number = 8, ordinal = 8;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.870;
+		txtlastName:                   TextBox  number = 6, ordinal = 6;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:49:49.869;
+	jadeMethodDefinitions
+		btnAdd_click(btn: Button input) updating, number = 1005;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:21:22:26:48.995;
+		btnEdit_click(btn: Button input) updating, number = 1003;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:07:34.517;
+		btnView_click(btn: Button input) updating, number = 1004;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:22:19:53:25.899;
+		btnsearch_click(btn: Button input) updating, number = 1007;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:24:14:01:41.204;
+		displaySearchResults(listSearchResults: Collection) updating, number = 1006;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:24:14:00:37.206;
+		listCustomers_displayRow(
+			listbox: ListBox input; 
+			cust: Customer; 
+			lstIndex: Integer; 
+			bcontinue: Boolean io): String updating, number = 1001;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:19:37:30.681;
+		load() updating, number = 1002;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:00:53.867;
+	eventMethodMappings
+		btnAdd_click = click of Button;
+		btnEdit_click = click of Button;
+		btnView_click = click of Button;
+		btnsearch_click = click of Button;
+		listCustomers_displayRow = displayRow of ListBox;
+		load = load of Form;
+	)
+	CustomerData completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:22:20:22:48.498;
+	referenceDefinitions
+		btnAdd:                        Button  number = 17, ordinal = 17;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.872;
+		btnDelete:                     Button  number = 18, ordinal = 18;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.873;
+		city:                          Label  number = 8, ordinal = 8;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.868;
+		firstName:                     Label  number = 16, ordinal = 16;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.872;
+		lastName:                      Label  number = 15, ordinal = 15;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.871;
+		lbAccountsList:                Label  number = 2, ordinal = 2;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:24:22.126;
+		lbCustomerDetails:             Label  number = 4, ordinal = 4;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:24:22.127;
+		lbUcBank:                      Label  number = 1, ordinal = 1;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:24:22.125;
+		listAccounts:                  ListBox  number = 3, ordinal = 3;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:24:22.127;
+		myCustomer:                    Customer  number = 19, ordinal = 19;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:57:26.200;
+		phone:                         Label  number = 10, ordinal = 10;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.869;
+		streetAddress:                 Label  number = 14, ordinal = 14;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.871;
+		suburb:                        Label  number = 9, ordinal = 9;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.869;
+		txtCity:                       TextBox  number = 5, ordinal = 5;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.866;
+		txtFirstName:                  TextBox  number = 13, ordinal = 13;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.870;
+		txtLastName:                   TextBox  number = 12, ordinal = 12;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.870;
+		txtPhone:                      TextBox  number = 11, ordinal = 11;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.869;
+		txtStreetAddress:              TextBox  number = 7, ordinal = 7;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.868;
+		txtSuburb:                     TextBox  number = 6, ordinal = 6;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:36:36.867;
+	jadeMethodDefinitions
+		load() updating, number = 1001;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:22:20:24:39.122;
+	eventMethodMappings
+		load = load of Form;
 	)
 	CustomerDetails completeDefinition
 	(
@@ -166,7 +275,7 @@ typeDefinitions
 		btnOK_click(btn: Button input) updating, number = 1003;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:27:10:19:16.301;
 		load() updating, number = 1001;
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:03:29:15:18:25.088;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:09:36.271;
 		updateCustomer() protected, number = 1002;
 		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:05:15:29:45.849;
 	eventMethodMappings
@@ -193,7 +302,7 @@ typeDefinitions
 			cust: Customer; 
 			lstIndex: Integer; 
 			bcontinue: Boolean io): String updating, number = 1002;
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:17:33:59.803;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:13:04:30.666;
 	eventMethodMappings
 		btnEdit_click = click of Button;
 		gotFocus = gotFocus of Form;
@@ -238,25 +347,21 @@ typeDefinitions
 	)
 	Main_Menu completeDefinition
 	(
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:50:05.864;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:22:20:33:45.212;
 	referenceDefinitions
-		btnExistingCustomer:           Button  number = 2, ordinal = 2;
-		setModifiedTimeStamp "justi" "22.0.03" 2024:05:17:16:17:46.314;
-		btnNewCustomer:                Button  number = 1, ordinal = 1;
-		setModifiedTimeStamp "justi" "22.0.03" 2024:05:17:16:17:46.311;
-		lblUCStaffPortal:              Label  number = 3, ordinal = 3;
-		setModifiedTimeStamp "justi" "22.0.03" 2024:05:17:16:17:46.315;
+		menuExisitingCustomer:         MenuItem  number = 4, ordinal = 5;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:21:22:14:41.503;
 	jadeMethodDefinitions
 		btnExistingCustomer_click(btn: Button input) updating, number = 1003;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:51:01.615;
 		btnNewCustomer_click(btn: Button input) updating, number = 1001;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:13:13:18.467;
-		click(menuItem: MenuItem input) updating, number = 1002;
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:13:11:33.770;
+		menuExisitingCustomer_click(menuItem: MenuItem input) updating, number = 1004;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:21:22:20:21.537;
 	eventMethodMappings
 		btnExistingCustomer_click = click of Button;
 		btnNewCustomer_click = click of Button;
-		click = click of Form;
+		menuExisitingCustomer_click = click of MenuItem;
 	)
 databaseDefinitions
 	ProjectSimpleBankViewDb
@@ -345,6 +450,18 @@ begin
 
 end;
 }
+runExisitingCustomer
+{
+runExisitingCustomer();
+
+vars
+	form : BrowseCustomers;
+begin
+	app.initialize();
+	create form transient;
+	form.show();
+end;
+}
 runMain_Menu
 {
 runMain_Menu();
@@ -356,6 +473,171 @@ begin
 	create form transient;
 	form.show();
 	
+end;
+}
+	)
+	BrowseCustomers (
+	jadeMethodSources
+btnAdd_click
+{
+btnAdd_click(btn: Button input) updating;
+
+vars
+	form : CustomerAdd;
+begin
+	create form transient;
+	form.show();
+end;
+}
+btnEdit_click
+{
+btnEdit_click(btn: Button input) updating;
+
+vars
+	cust : Customer;
+	form : CustomerEdit;
+begin
+	cust := self.listCustomers.listObject.Customer;
+	
+	if cust = null then
+		app.msgBox("select a customer to edit first, pretty please!", "No Customer Selected", MsgBox_OK_Only);
+	else	
+		create form transient;
+		form.myCustomer := cust;
+		form.show();
+		
+	endif;
+end;
+}
+btnView_click
+{
+btnView_click(btn: Button input) updating;
+
+vars
+	cust : Customer;
+	form : CustomerData;
+begin
+	cust := self.listCustomers.listObject.Customer;
+	
+	if cust = null then
+		app.msgBox("select a customer to view first, pretty please!", "No Customer Selected", MsgBox_OK_Only);
+	else	
+		create form transient;
+		form.myCustomer := cust;
+		form.show();
+		
+	endif;
+end;	
+}
+btnsearch_click
+{
+btnsearch_click(btn: Button input) updating;
+
+vars
+	cust : Customer;
+	//this iterator will be used to look through the customers in the listbox
+	iter : Iterator;
+	//this is where the collection to be iterated through will be stored
+	listCustomerToSearch: Collection;	
+	listSearchResults: Collection;
+begin
+	//this returns the collection attached to the listCustomers listBox
+	listCustomerToSearch := listCustomers.getCollection();
+	//creates an iterator for the collection
+	iter := listCustomerToSearch.createIterator();
+	//the actual searching happens below:
+	while iter.next(cust) do 
+		if cust.lastName = txtlastName.text then
+		
+			//this is just a proof of concept method to make sure the search WORKS,
+			//displaying the filtered customers will come later.
+			//write app.msgBox(cust.getFullName(),"Search complete" , MsgBox_OK_Only);
+			
+			//this is currently returning a null value, which breaks the displaySearchResults method
+			//which requires it
+			listSearchResults.add(cust.getFullName);
+			
+			
+			/*below this is code that will display a msgBox saying "no customers with this last name!"
+			if the entered last name does not match any last names in the database.
+			
+			Currently commented out because it causes an infinite loop 
+			where the msgBox displays over and over again and prevents
+			the process from terminating
+			*/
+			
+		/*
+		else
+			write app.msgBox("No customers with this last name found!", "Search complete", MsgBox_OK_Only);
+		*/
+		
+
+		endif;
+		//this should display the results of the search in the listBox when completed.
+		displaySearchResults(listSearchResults);
+	endwhile;
+	
+epilog
+	delete iter;
+end;
+}
+displaySearchResults
+{
+displaySearchResults(listSearchResults: Collection) updating;
+
+vars
+
+begin
+	self.listCustomers.clear();
+	self.listCustomers.displayCollection(listSearchResults, true, 
+	ListBox.DisplayCollection_Forward, null, "");
+end;
+}
+listCustomers_displayRow
+{
+listCustomers_displayRow(listbox: ListBox input; cust: Customer; lstIndex: Integer; bcontinue: Boolean io):String updating;
+
+vars
+
+begin
+	return cust.getFullName();
+end;
+}
+load
+{
+load() updating;
+
+vars
+
+begin
+	self.listCustomers.displayCollection(app.ourBank.allCustomers, true, 
+	ListBox.DisplayCollection_Forward, null, "");
+end;
+}
+	)
+	CustomerData (
+	jadeMethodSources
+load
+{
+load() updating;
+
+vars
+	
+begin
+
+	app.mdiFrame := Main_Menu;
+	
+	//myCustomer was passed from BrowseCustomers in the method for the View button
+	
+	self.txtFirstName.text := myCustomer.firstName;
+	self.txtLastName.text := myCustomer.lastName;
+	self.txtPhone.text := myCustomer.getPropertyValue('phone').String;
+	self.txtStreetAddress.text := myCustomer.getPropertyValue('streetAddress').String;
+	self.txtSuburb.text := myCustomer.getPropertyValue('suburb').String;
+	self.txtCity.text := myCustomer.getPropertyValue('city').String;
+	
+	//self.listAccounts.displayCollection() <- placeholder right now for some more code
+	//above code should eventually display the customer's bank accs in conjuction with listAccount's displayRow method
 end;
 }
 	)
@@ -522,7 +804,7 @@ load
 load() updating;
 
 begin
-	app.mdiFrame := MainMenu;
+	app.mdiFrame := Main_Menu;
 
 	self.txtFirstName.text := myCustomer.firstName;
 	self.txtLastName.text := myCustomer.lastName;
@@ -648,13 +930,13 @@ begin
 	form.show();
 end;
 }
-click
+menuExisitingCustomer_click
 {
-click(menuItem: MenuItem input) updating;
+menuExisitingCustomer_click(menuItem: MenuItem input) updating;
 
 vars
-	form : CustomerAdd;
-begin 
+	form : BrowseCustomers;
+begin
 	create form transient;
 	form.show();
 end;

@@ -6,7 +6,7 @@ localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 	setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:14:49:22.863;
 	14345 "English (Indonesia)" _cloneOf 5129;
-	setModifiedTimeStamp "<unknown>" "" 2024:05:19:12:50:57;
+	setModifiedTimeStamp "<unknown>" "" 2024:05:21:22:05:10;
 typeHeaders
 	Assignment subclassOf RootSchemaApp transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2102;
 	GAssignment subclassOf RootSchemaGlobal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2103;
@@ -74,7 +74,7 @@ databaseDefinitions
 	(
 	setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:14:49:22.924;
 	databaseFileDefinitions
-		"assignment" number = 60;
+		"assignment" number = 62;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:14:49:22.924;
 	defaultFileDefinition "assignment";
 	classMapDefinitions
