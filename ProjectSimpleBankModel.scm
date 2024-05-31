@@ -6,14 +6,16 @@ localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 	setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:10:55.421;
 	14345 "English (Indonesia)" _cloneOf 5129;
-	setModifiedTimeStamp "<unknown>" "" 2024:05:24:14:26:20;
+	setModifiedTimeStamp "<unknown>" "" 2024:05:27:15:46:35;
 typeHeaders
 	SimpleBankModel subclassOf Assignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2118;
 	Bank subclassOf Object highestSubId = 2, highestOrdinal = 4, number = 2120;
 	BankAccount subclassOf Object abstract, highestOrdinal = 3, number = 2121;
 	CurrentAccount subclassOf BankAccount highestOrdinal = 1, number = 2122;
 	SavingsAccount subclassOf BankAccount highestOrdinal = 1, number = 2123;
+	BankXML subclassOf Object number = 2164;
 	Customer subclassOf Object highestSubId = 1, highestOrdinal = 10, number = 2124;
+	GenericExceptionHandler subclassOf NormalException transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2160;
 	GSimpleBankModel subclassOf GAssignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2126;
 	SSimpleBankModel subclassOf SAssignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2127;
 	BankAccountByNumberDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2128;
@@ -47,7 +49,7 @@ typeDefinitions
 	)
 	Bank completeDefinition
 	(
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:06:15:48:01.213;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:24:14:38:16.012;
 	attributeDefinitions
 		lastAccountNumber:             Integer protected, number = 3, ordinal = 4;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:14:46:53.239;
@@ -119,6 +121,13 @@ without inverses and requires manual maintenance.`
 		create(number: Integer) updating, number = 1001;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:27:10:09:18.285;
 	)
+	BankXML completeDefinition
+	(
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:15:54:36.450;
+	jadeMethodDefinitions
+		exportAccount() number = 1001;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:16:17:48.933;
+	)
 	Customer completeDefinition
 	(
 		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:06:15:49:29.620;
@@ -165,6 +174,19 @@ without inverses and requires manual maintenance.`
 			cCity: String) updating, number = 1003;
 		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:06:15:50:32.372;
 	)
+	Exception completeDefinition
+	(
+	)
+	NormalException completeDefinition
+	(
+	)
+	GenericExceptionHandler completeDefinition
+	(
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:20:38:26.612;
+	jadeMethodDefinitions
+		create() updating, protected, number = 1001;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:20:50:35.333;
+	)
 	Global completeDefinition
 	(
 	)
@@ -183,7 +205,7 @@ without inverses and requires manual maintenance.`
 	(
 	jadeMethodDefinitions
 		createCustomersFromFile() number = 1006;
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:24:15:40:57.291;
+		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:27:16:45:32.782;
 		createTestAccounts() updating, number = 1009;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:20:40:34.665;
 		createTestCustomer() updating, number = 1001;
@@ -282,10 +304,12 @@ databaseDefinitions
 		Bank in "simplebankmodel";
 		BankAccount in "simplebankaccount";
 		BankAccountByNumberDict in "simplebankaccount";
+		BankXML in "simplebankmodel";
 		CurrentAccount in "simplebankaccount";
 		Customer in "simplebankcustomer";
 		CustomerByLastNameDict in "simplebankcustomer";
 		GSimpleBankModel in "simplebankmodel";
+		GenericExceptionHandler in "simplebankmodel";
 		SSimpleBankModel in "_environ";
 		SavingsAccount in "simplebankaccount";
 		SimpleBankModel in "_usergui";
@@ -455,6 +479,80 @@ begin
 end;
 }
 	)
+	BankXML (
+	jadeMethodSources
+exportAccount
+{
+exportAccount();
+
+vars
+	xmlDoc			:	JadeXMLDocument;
+	rootElement,
+	pers,
+	contact,
+	addr,
+	elmnt			:	JadeXMLElement;
+	person			:	Person;
+	address			:	Address;
+	email			:	Email;
+	phone			:	Phone;
+	contDet			:	ContactDetail;
+	root			:	Root;
+begin
+	root := Root.firstInstance;
+	create xmlDoc;
+	xmlDoc.addComment("This document includes Person details exportd from JADE persistent object set.");
+	
+	rootElement := xmlDoc.addElement("PEOPLE_DETAILS");
+
+	foreach person in root.allPersons do
+		pers := rootElement.addElement("PERSON_DETAILS");
+		elmnt := pers.addElement("PERSON_FIRST_NAME");
+		elmnt.setText(person.firstName);
+		elmnt := pers.addElement("PERSON_LAST_NAME");
+		elmnt.setText(person.lastName);
+		elmnt := pers.addElement("OCCUPATION");
+		elmnt.setText(person.occupation);
+		contact := pers.addElement("CONTACT_DETAILS");
+		
+		foreach contDet in person.allContactDetails do
+			if contDet.isKindOf(Address) then
+				address := contDet.Address;
+				addr := contact.addElement("ADDRESS_DETAILS");
+				addr.addAttribute("TYPE", address.contactType);
+				elmnt := addr.addElement("ADDRESS_LINE_1");
+				elmnt.setText(address.addressLine1);
+				elmnt := addr.addElement("ADDRESS_LINE_2");
+				elmnt.setText(address.addressLine2);
+				elmnt := addr.addElement("SUBURB");
+				elmnt.setText(address.suburb);
+				elmnt := addr.addElement("CITY");
+				elmnt.setText(address.city);
+				elmnt := addr.addElement("COUNTRY");
+				elmnt.setText(address.country.toUpper);
+				elmnt := addr.addElement("POSTCODE");
+				elmnt.setText(address.postCode);
+			endif;
+			if contDet.isKindOf(Phone) then
+				phone := contDet.Phone;
+				elmnt := contact.addElement("PHONE");
+				elmnt.addAttribute("TYPE", phone.contactType);
+				elmnt.setText(phone.getPhoneNumber);
+			endif;
+			if contDet.isKindOf(Email) then
+				email := contDet.Email;
+				elmnt := contact.addElement("EMAIL");
+				elmnt.addAttribute("TYPE", email.contactType);
+				elmnt.setText(email.emailAddress);
+			endif;
+		endforeach;
+	endforeach;
+	xmlDoc.writeToFile("C:\Users\fergu\OneDrive\Documents\INFO213\PeopleExport.xml");
+epilog
+	delete xmlDoc;
+end;
+}
+	)
 	Customer (
 	jadeMethodSources
 create
@@ -525,6 +623,17 @@ begin
 end;
 }
 	)
+	GenericExceptionHandler (
+	jadeMethodSources
+create
+{
+create() updating, protected;
+
+begin
+self.errorCode := 64000;
+end;
+}
+	)
 	JadeScript (
 	jadeMethodSources
 createCustomersFromFile
@@ -537,7 +646,7 @@ vars
 	fileLine : String;
 	customer : Customer;
 
-begin	
+begin
 	// Make sure the root object (instance of the class Bank) is available
 	app.initialize();
 	

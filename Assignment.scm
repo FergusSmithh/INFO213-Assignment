@@ -6,7 +6,7 @@ localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 	setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:14:49:22.863;
 	14345 "English (Indonesia)" _cloneOf 5129;
-	setModifiedTimeStamp "<unknown>" "" 2024:05:24:14:25:13;
+	setModifiedTimeStamp "<unknown>" "" 2024:05:27:15:46:31;
 typeHeaders
 	Assignment subclassOf RootSchemaApp transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2102;
 	GAssignment subclassOf RootSchemaGlobal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2103;
@@ -25,6 +25,12 @@ typeDefinitions
 	Assignment completeDefinition
 	(
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:14:49:22.916;
+	)
+	Exception completeDefinition
+	(
+	)
+	NormalException completeDefinition
+	(
 	)
 	Global completeDefinition
 	(
