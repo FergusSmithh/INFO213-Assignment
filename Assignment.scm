@@ -80,7 +80,7 @@ databaseDefinitions
 	(
 	setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:14:49:22.924;
 	databaseFileDefinitions
-		"assignment" number = 60;
+		"assignment" number = 62;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:15:14:49:22.924;
 	defaultFileDefinition "assignment";
 	classMapDefinitions

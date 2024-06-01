@@ -60,7 +60,7 @@
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
 		<ignoreSkinAllControls>false</ignoreSkinAllControls>
-		<left>618</left>
+		<left>246</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -86,7 +86,7 @@
 		<showMdiPinMenu>false</showMdiPinMenu>
 		<skinCategoryName/>
 		<tag/>
-		<top>35</top>
+		<top>32</top>
 		<userScript/>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
@@ -97,6 +97,135 @@
 		<width>775</width>
 		<windowState>0</windowState>
 		<controlList>
+			<Label name="lbaccountNumber_1">
+				<alignment>4</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483648</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Account Number</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483639</foreColor>
+				<form name="Account" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>1</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbaccountNumber_1</name>
+				<noPrefix>false</noPrefix>
+				<parent name="Account" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>337</parentBottomOffset>
+				<parentRightOffset>642</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>36</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>57</top>
+				<transparent>false</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>116</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtAccNumber_1">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>false</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="Account" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<integralHeight>false</integralHeight>
+				<left>128</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtAccNumber_1</name>
+				<parent name="Account" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>337</parentBottomOffset>
+				<parentRightOffset>410</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>35</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>57</top>
+				<userScript/>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<webInputType/>
+				<width>221</width>
+			</TextBox>
 			<Picture name="picture2">
 				<backBrush/>
 				<backBrushStyle>0</backBrushStyle>
@@ -1233,77 +1362,6 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<width>152</width>
 				<wordWrap>false</wordWrap>
 			</Label>
-			<TextBox name="txtStreetAddress">
-				<alignment>0</alignment>
-				<autoTab>false</autoTab>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<case>0</case>
-				<dataType>0</dataType>
-				<decimals>0</decimals>
-				<description/>
-				<disableReason/>
-				<dragCursor/>
-				<enabled>false</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="Account" />
-				<formatOut/>
-				<height>22</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hintBackColor>-2147483648</hintBackColor>
-				<hintForeColor>-2147483648</hintForeColor>
-				<hintText/>
-				<ignoreSkin>false</ignoreSkin>
-				<index>0</index>
-				<integralHeight>false</integralHeight>
-				<left>128</left>
-				<maxLength>30</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>txtStreetAddress</name>
-				<parent name="Account" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>225</parentBottomOffset>
-				<parentRightOffset>410</parentRightOffset>
-				<passwordField>false</passwordField>
-				<readOnly>false</readOnly>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<scrollBars>0</scrollBars>
-				<scrollHorizontal>false</scrollHorizontal>
-				<scrollVertical>false</scrollVertical>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<selectionStyle>0</selectionStyle>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>13</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<text/>
-				<textOffset>0</textOffset>
-				<top>169</top>
-				<userScript/>
-				<visible>true</visible>
-				<wantReturn>false</wantReturn>
-				<webInputType/>
-				<width>221</width>
-			</TextBox>
 			<Label name="lbBalance">
 				<alignment>4</alignment>
 				<autoSize>false</autoSize>
@@ -1342,7 +1400,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<noPrefix>false</noPrefix>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>259</parentBottomOffset>
+				<parentBottomOffset>238</parentBottomOffset>
 				<parentRightOffset>642</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
@@ -1355,14 +1413,14 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tabIndex>10</tabIndex>
 				<tabStop>false</tabStop>
 				<tag/>
-				<top>135</top>
+				<top>156</top>
 				<transparent>false</transparent>
 				<userScript/>
 				<visible>true</visible>
 				<width>82</width>
 				<wordWrap>false</wordWrap>
 			</Label>
-			<TextBox name="txtPhone">
+			<TextBox name="txtBalance">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
 				<backBrush/>
@@ -1399,13 +1457,13 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<index>0</index>
 				<integralHeight>false</integralHeight>
 				<left>128</left>
-				<maxLength>15</maxLength>
+				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>txtPhone</name>
+				<name>txtBalance</name>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>259</parentBottomOffset>
+				<parentBottomOffset>238</parentBottomOffset>
 				<parentRightOffset>410</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
@@ -1426,14 +1484,14 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tag/>
 				<text/>
 				<textOffset>0</textOffset>
-				<top>135</top>
+				<top>156</top>
 				<userScript/>
 				<visible>true</visible>
 				<wantReturn>false</wantReturn>
 				<webInputType/>
 				<width>221</width>
 			</TextBox>
-			<TextBox name="txtLastName">
+			<TextBox name="txtAccType">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
 				<backBrush/>
@@ -1470,13 +1528,13 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<index>0</index>
 				<integralHeight>false</integralHeight>
 				<left>128</left>
-				<maxLength>11</maxLength>
+				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>txtLastName</name>
+				<name>txtAccType</name>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>292</parentBottomOffset>
+				<parentBottomOffset>271</parentBottomOffset>
 				<parentRightOffset>410</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
@@ -1497,14 +1555,14 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tag/>
 				<text/>
 				<textOffset>0</textOffset>
-				<top>102</top>
+				<top>123</top>
 				<userScript/>
 				<visible>true</visible>
 				<wantReturn>false</wantReturn>
 				<webInputType/>
 				<width>221</width>
 			</TextBox>
-			<TextBox name="txtFirstName">
+			<TextBox name="txtAccName">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
 				<backBrush/>
@@ -1541,13 +1599,13 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<index>0</index>
 				<integralHeight>false</integralHeight>
 				<left>128</left>
-				<maxLength>11</maxLength>
+				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>txtFirstName</name>
+				<name>txtAccName</name>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>325</parentBottomOffset>
+				<parentBottomOffset>304</parentBottomOffset>
 				<parentRightOffset>410</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
@@ -1568,71 +1626,13 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tag/>
 				<text/>
 				<textOffset>0</textOffset>
-				<top>69</top>
+				<top>90</top>
 				<userScript/>
 				<visible>true</visible>
 				<wantReturn>false</wantReturn>
 				<webInputType/>
 				<width>221</width>
 			</TextBox>
-			<Label name="streetAddress">
-				<alignment>4</alignment>
-				<autoSize>false</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483648</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<caption>Street Address:</caption>
-				<description/>
-				<disableReason/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="Account" />
-				<formatOut/>
-				<height>22</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hyperlink/>
-				<ignoreSkin>false</ignoreSkin>
-				<index>0</index>
-				<left>35</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>streetAddress</name>
-				<noPrefix>false</noPrefix>
-				<parent name="Account" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>226</parentBottomOffset>
-				<parentRightOffset>642</parentRightOffset>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>5</tabIndex>
-				<tabStop>false</tabStop>
-				<tag/>
-				<top>168</top>
-				<transparent>false</transparent>
-				<userScript/>
-				<visible>true</visible>
-				<width>82</width>
-				<wordWrap>false</wordWrap>
-			</Label>
 			<Label name="lbAccountType">
 				<alignment>4</alignment>
 				<autoSize>false</autoSize>
@@ -1671,7 +1671,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<noPrefix>false</noPrefix>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>292</parentBottomOffset>
+				<parentBottomOffset>271</parentBottomOffset>
 				<parentRightOffset>642</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
@@ -1684,7 +1684,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tabIndex>18</tabIndex>
 				<tabStop>false</tabStop>
 				<tag/>
-				<top>102</top>
+				<top>123</top>
 				<transparent>false</transparent>
 				<userScript/>
 				<visible>true</visible>
@@ -1700,7 +1700,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<borderColorSingle>0</borderColorSingle>
 				<borderStyle>0</borderStyle>
 				<bubbleHelp/>
-				<caption>Account Number</caption>
+				<caption>Account Name</caption>
 				<description/>
 				<disableReason/>
 				<dragCursor/>
@@ -1729,7 +1729,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<noPrefix>false</noPrefix>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>325</parentBottomOffset>
+				<parentBottomOffset>304</parentBottomOffset>
 				<parentRightOffset>642</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
@@ -1742,7 +1742,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tabIndex>19</tabIndex>
 				<tabStop>false</tabStop>
 				<tag/>
-				<top>69</top>
+				<top>90</top>
 				<transparent>false</transparent>
 				<userScript/>
 				<visible>true</visible>
@@ -1993,7 +1993,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<webFileName/>
 				<width>88</width>
 			</Button>
-			<ListBox name="listAccounts">
+			<ListBox name="listTransactions">
 				<alternatingRowBackColor>16777200</alternatingRowBackColor>
 				<alternatingRowBackColorCount>0</alternatingRowBackColorCount>
 				<backBrush/>
@@ -2030,7 +2030,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<multiSelect>0</multiSelect>
-				<name>listAccounts</name>
+				<name>listTransactions</name>
 				<nameSeparator>\</nameSeparator>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
@@ -2120,7 +2120,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<width>114</width>
 				<wordWrap>false</wordWrap>
 			</Label>
-			<TextBox name="txtlastName_1">
+			<TextBox name="txtSearchTransactions">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
 				<backBrush/>
@@ -2160,7 +2160,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>txtlastName_1</name>
+				<name>txtSearchTransactions</name>
 				<parent name="searchTransactions" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>39</parentBottomOffset>
@@ -2437,6 +2437,193 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 		<width>422</width>
 		<windowState>0</windowState>
 		<controlList>
+			<Label name="lbAccType">
+				<alignment>1</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Account type:</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AccountAdd" />
+				<formatOut/>
+				<height>13</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>24</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbAccType</name>
+				<noPrefix>false</noPrefix>
+				<parent name="AccountAdd" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>92</parentBottomOffset>
+				<parentRightOffset>314</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>25</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>103</top>
+				<transparent>true</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>68</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lbAccName">
+				<alignment>1</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Account name:</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AccountAdd" />
+				<formatOut/>
+				<height>13</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>24</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbAccName</name>
+				<noPrefix>false</noPrefix>
+				<parent name="AccountAdd" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>126</parentBottomOffset>
+				<parentRightOffset>310</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>24</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>69</top>
+				<transparent>true</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>72</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtAccName">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AccountAdd" />
+				<formatOut/>
+				<height>19</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<integralHeight>false</integralHeight>
+				<left>102</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtAccName</name>
+				<parent name="AccountAdd" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>124</parentBottomOffset>
+				<parentRightOffset>103</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>23</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>65</top>
+				<userScript/>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<webInputType/>
+				<width>201</width>
+			</TextBox>
 			<ComboBox name="newAccountOption">
 				<backBrush/>
 				<backBrushStyle>0</backBrushStyle>
@@ -2475,7 +2662,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<name>newAccountOption</name>
 				<parent name="AccountAdd" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>107</parentBottomOffset>
+				<parentBottomOffset>89</parentBottomOffset>
 				<parentRightOffset>103</parentRightOffset>
 				<pictureClosed/>
 				<pictureLeaf/>
@@ -2496,7 +2683,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tabIndex>22</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>81</top>
+				<top>99</top>
 				<userScript/>
 				<visible>true</visible>
 				<width>201</width>
@@ -2745,6 +2932,439 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<width>274</width>
 				<wordWrap>false</wordWrap>
 			</Label>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+	<Form locale="5129" name="AccountEdit">
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483646</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>AccountEdit</caption>
+		<clientHeight>142</clientHeight>
+		<clientWidth>407</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>181</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<ignoreSkinAllControls>false</ignoreSkinAllControls>
+		<left>329</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<mdiPinned>false</mdiPinned>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>AccountEdit</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<showMdiCloseAllButPinnedMenu>false</showMdiCloseAllButPinnedMenu>
+		<showMdiCloseAllButThisMenu>false</showMdiCloseAllButThisMenu>
+		<showMdiCloseMenu>false</showMdiCloseMenu>
+		<showMdiDockMenu>false</showMdiDockMenu>
+		<showMdiFloatMenu>false</showMdiFloatMenu>
+		<showMdiPinMenu>false</showMdiPinMenu>
+		<skinCategoryName/>
+		<tag/>
+		<top>-10</top>
+		<userScript/>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>423</width>
+		<windowState>0</windowState>
+		<controlList>
+			<Button name="btnCancel">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Cancel</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AccountEdit" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>65</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnCancel</name>
+				<parent name="AccountEdit" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>23</parentBottomOffset>
+				<parentRightOffset>254</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>26</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>97</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
+			<Button name="btnDelete">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Delete</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AccountEdit" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>159</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnDelete</name>
+				<parent name="AccountEdit" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>23</parentBottomOffset>
+				<parentRightOffset>160</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>25</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>97</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
+			<Label name="lbEditAccount">
+				<alignment>1</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Edit Account</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>true</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>20.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483634</foreColor>
+				<form name="AccountEdit" />
+				<formatOut/>
+				<height>33</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>119</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbEditAccount</name>
+				<noPrefix>false</noPrefix>
+				<parent name="AccountEdit" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>102</parentBottomOffset>
+				<parentRightOffset>119</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>3</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>7</top>
+				<transparent>true</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>169</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Button name="btnOK">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>OK</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AccountEdit" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>253</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnOK</name>
+				<parent name="AccountEdit" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>23</parentBottomOffset>
+				<parentRightOffset>66</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>24</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>97</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
+			<Label name="lbaccountNumber">
+				<alignment>4</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483648</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Account Name</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483639</foreColor>
+				<form name="AccountEdit" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>47</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbaccountNumber</name>
+				<noPrefix>false</noPrefix>
+				<parent name="AccountEdit" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>64</parentBottomOffset>
+				<parentRightOffset>279</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>19</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>56</top>
+				<transparent>false</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>81</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtAccName">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AccountEdit" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<integralHeight>false</integralHeight>
+				<left>139</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtAccName</name>
+				<parent name="AccountEdit" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>64</parentBottomOffset>
+				<parentRightOffset>47</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>7</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>56</top>
+				<userScript/>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<webInputType/>
+				<width>221</width>
+			</TextBox>
 		</controlList>
 		<menuList>
 		</menuList>
@@ -5558,7 +6178,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<webFileName/>
 				<width>88</width>
 			</Button>
-			<Button name="btnDelete">
+			<Button name="btnEdit">
 				<autoSize>1</autoSize>
 				<backBrush/>
 				<backBrushStyle>0</backBrushStyle>
@@ -5568,7 +6188,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<bubbleHelp/>
 				<buttonPicture>0</buttonPicture>
 				<cancel>false</cancel>
-				<caption>Delete</caption>
+				<caption>Edit</caption>
 				<default>false</default>
 				<description/>
 				<disableReason/>
@@ -5592,7 +6212,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<left>640</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>btnDelete</name>
+				<name>btnEdit</name>
 				<parent name="CustomerData" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>19</parentBottomOffset>
@@ -12200,7 +12820,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
 		<ignoreSkinAllControls>false</ignoreSkinAllControls>
-		<left>580</left>
+		<left>520</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -12226,7 +12846,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 		<showMdiPinMenu>false</showMdiPinMenu>
 		<skinCategoryName/>
 		<tag/>
-		<top>219</top>
+		<top>67</top>
 		<userScript/>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
@@ -12237,6 +12857,193 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 		<width>423</width>
 		<windowState>0</windowState>
 		<controlList>
+			<Label name="lbTrnsAmount">
+				<alignment>1</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Amount:</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="Transactions" />
+				<formatOut/>
+				<height>13</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>17</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbTrnsAmount</name>
+				<noPrefix>false</noPrefix>
+				<parent name="Transactions" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>89</parentBottomOffset>
+				<parentRightOffset>349</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>25</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>95</top>
+				<transparent>true</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>41</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lbTrnsName">
+				<alignment>1</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Name:</caption>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="Transactions" />
+				<formatOut/>
+				<height>13</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>27</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lbTrnsName</name>
+				<noPrefix>false</noPrefix>
+				<parent name="Transactions" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>116</parentBottomOffset>
+				<parentRightOffset>349</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>24</tabIndex>
+				<tabStop>false</tabStop>
+				<tag/>
+				<top>68</top>
+				<transparent>true</transparent>
+				<userScript/>
+				<visible>true</visible>
+				<width>31</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtAmount">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="Transactions" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<integralHeight>false</integralHeight>
+				<left>93</left>
+				<maxLength>11</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtAmount</name>
+				<parent name="Transactions" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>84</parentBottomOffset>
+				<parentRightOffset>93</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>23</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>91</top>
+				<userScript/>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<webInputType/>
+				<width>221</width>
+			</TextBox>
 			<Button name="btnOK">
 				<autoSize>1</autoSize>
 				<backBrush/>
@@ -12359,7 +13166,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<webFileName/>
 				<width>88</width>
 			</Button>
-			<TextBox name="txtAmount">
+			<TextBox name="txtTransName">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
 				<backBrush/>
@@ -12374,7 +13181,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<description/>
 				<disableReason/>
 				<dragCursor/>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 				<focusBackColor>0</focusBackColor>
 				<focusForeColor>0</focusForeColor>
 				<fontBold>false</fontBold>
@@ -12399,10 +13206,10 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<maxLength>11</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>txtAmount</name>
+				<name>txtTransName</name>
 				<parent name="Transactions" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>89</parentBottomOffset>
+				<parentBottomOffset>112</parentBottomOffset>
 				<parentRightOffset>93</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
@@ -12423,14 +13230,14 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<tag/>
 				<text/>
 				<textOffset>0</textOffset>
-				<top>86</top>
+				<top>63</top>
 				<userScript/>
 				<visible>true</visible>
 				<wantReturn>false</wantReturn>
 				<webInputType/>
 				<width>221</width>
 			</TextBox>
-			<Label name="lbEnterAmount">
+			<Label name="lbTransDetails">
 				<alignment>1</alignment>
 				<autoSize>true</autoSize>
 				<backBrush/>
@@ -12439,7 +13246,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<borderColorSingle>0</borderColorSingle>
 				<borderStyle>0</borderStyle>
 				<bubbleHelp/>
-				<caption>Enter Amount:</caption>
+				<caption>Enter Transaction Details:</caption>
 				<description/>
 				<disableReason/>
 				<dragCursor/>
@@ -12461,15 +13268,15 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<hyperlink/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>105</left>
+				<left>28</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>lbEnterAmount</name>
+				<name>lbTransDetails</name>
 				<noPrefix>false</noPrefix>
 				<parent name="Transactions" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>138</parentBottomOffset>
-				<parentRightOffset>105</parentRightOffset>
+				<parentBottomOffset>141</parentBottomOffset>
+				<parentRightOffset>28</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -12481,18 +13288,18 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<tabIndex>4</tabIndex>
 				<tabStop>false</tabStop>
 				<tag/>
-				<top>26</top>
+				<top>23</top>
 				<transparent>true</transparent>
 				<userScript/>
 				<visible>true</visible>
-				<width>197</width>
+				<width>351</width>
 				<wordWrap>false</wordWrap>
 			</Label>
 		</controlList>
 		<menuList>
 		</menuList>
 	</Form>
-	<Form locale="5129" name="Deposit">
+	<Form locale="5129" name="DepositForm">
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -12524,7 +13331,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>Deposit</name>
+		<name>DepositForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -12555,7 +13362,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 		<menuList>
 		</menuList>
 	</Form>
-	<Form locale="5129" name="Withdraw">
+	<Form locale="5129" name="WithdrawForm">
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -12587,7 +13394,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>Withdraw</name>
+		<name>WithdrawForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>

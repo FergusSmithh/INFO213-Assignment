@@ -10,19 +10,23 @@ localeDefinitions
 typeHeaders
 	SimpleBankModel subclassOf Assignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2118;
 	Bank subclassOf Object highestSubId = 2, highestOrdinal = 4, number = 2120;
-	BankAccount subclassOf Object abstract, highestOrdinal = 3, number = 2121;
+	BankAccount subclassOf Object abstract, highestSubId = 1, highestOrdinal = 6, number = 2121;
 	CurrentAccount subclassOf BankAccount highestOrdinal = 1, number = 2122;
 	SavingsAccount subclassOf BankAccount highestOrdinal = 1, number = 2123;
 	BankXML subclassOf Object number = 2164;
-	Customer subclassOf Object highestSubId = 1, highestOrdinal = 10, number = 2124;
+	Customer subclassOf Object highestSubId = 1, highestOrdinal = 12, number = 2124;
 	GenericExceptionHandler subclassOf NormalException transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2160;
 	GSimpleBankModel subclassOf GAssignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2126;
+	Transaction subclassOf Object abstract, highestOrdinal = 4, number = 2107;
+	Deposit subclassOf Transaction highestOrdinal = 1, number = 2109;
 	SSimpleBankModel subclassOf SAssignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2127;
 	BankAccountByNumberDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2128;
 	CustomerByLastNameDict subclassOf MemberKeyDictionary duplicatesAllowed, loadFactor = 66, number = 2129;
+	TransactionsByDateDict subclassOf MemberKeyDictionary duplicatesAllowed, loadFactor = 66, number = 2108;
 membershipDefinitions
 	BankAccountByNumberDict of BankAccount;
 	CustomerByLastNameDict of Customer;
+	TransactionsByDateDict of Transaction;
 typeDefinitions
 	Object completeDefinition
 	(
@@ -71,7 +75,7 @@ without inverses and requires manual maintenance.`
 	)
 	BankAccount completeDefinition
 	(
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:10:19:17.912;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:17:03:39.466;
 	constantDefinitions
 		Default_Interest_Rate:         Real = 2.5 number = 1002;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:19:07:26.389;
@@ -82,7 +86,11 @@ without inverses and requires manual maintenance.`
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:10:19:44.756;
 		balance:                       Decimal[12,2] protected, number = 3, ordinal = 3;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:21:34.509;
+		name:                          String[31] number = 5, ordinal = 6;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:15:29:36.368;
 	referenceDefinitions
+		allTransactions:               TransactionsByDateDict   explicitInverse, readonly, subId = 1, number = 4, ordinal = 5;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:14:29:37.319;
 		myCustomer:                    Customer   explicitEmbeddedInverse, number = 2, ordinal = 2;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:10:32:38.080;
 	jadeMethodDefinitions
@@ -90,8 +98,14 @@ without inverses and requires manual maintenance.`
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:19:36.642;
 		create(number: Integer) updating, number = 1001;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:07:23.620;
-		deposit(amount: Decimal) updating, number = 1003;
-		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:06:15:52:12.248;
+		deposit(
+			amount: Decimal; 
+			payorName: String; 
+			bankAccount: BankAccount; 
+			transName: String) updating, number = 1003;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:58:39.222;
+		editAccount(newName: String) updating, number = 1006;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:41:55.353;
 		getBalance(): Decimal number = 1004;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:22:44.932;
 		withdraw(amount: Decimal) updating, number = 1005;
@@ -99,7 +113,10 @@ without inverses and requires manual maintenance.`
 	)
 	CurrentAccount completeDefinition
 	(
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:10:20:08.021;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:11:22:00.338;
+	constantDefinitions
+		Curr_Default_Name:             String = "New current account" number = 1001;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:11:23:24.090;
 	attributeDefinitions
 		overdraftLimit:                Integer readonly, number = 1, ordinal = 1;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:09:08.876;
@@ -112,6 +129,9 @@ without inverses and requires manual maintenance.`
 	SavingsAccount completeDefinition
 	(
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:15:26.169;
+	constantDefinitions
+		Savs_Default_Name:             String = "New savings account" number = 1001;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:11:23:33.507;
 	attributeDefinitions
 		interestRate:                  Decimal[12,1] readonly, number = 1, ordinal = 1;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:16:47.357;
@@ -218,6 +238,8 @@ without inverses and requires manual maintenance.`
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:19:37:39.922;
 		purgeCustomers() number = 1007;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:41:30.342;
+		purgeTransactions() number = 1017;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:36:42.271;
 		testAutomatedInverseAssignment() updating, number = 1010;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:17:09:56.489;
 		workingDecimalType() number = 1003;
@@ -228,6 +250,35 @@ without inverses and requires manual maintenance.`
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:05:15:43:50.869;
 		workingWithStrings() number = 1004;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:05:19:43:32.228;
+	)
+	Transaction completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:17:05:15.583;
+	attributeDefinitions
+		amount:                        Decimal[12] number = 1, ordinal = 1;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:19:04:24.682;
+		date:                          Date readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:17:06:04.684;
+		name:                          String[31] number = 4, ordinal = 4;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:15:29:08.483;
+	referenceDefinitions
+		theAccount:                    BankAccount   explicitEmbeddedInverse, number = 3, ordinal = 3;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:14:29:37.322;
+	)
+	Deposit completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:21:20:59.395;
+	attributeDefinitions
+		payorName:                     String[31] readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:21:21:30.475;
+	jadeMethodDefinitions
+		create(
+			pDateString: String; 
+			pAmount: Decimal; 
+			pPayorName: String; 
+			pTheAccount: BankAccount; 
+			pName: String) updating, number = 1001;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:59:55.578;
 	)
 	WebSession completeDefinition
 	(
@@ -270,6 +321,10 @@ without inverses and requires manual maintenance.`
 	(
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:13:14:14:12.156;
 	)
+	TransactionsByDateDict completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:17:07:23.773;
+	)
 	Decimal completeDefinition
 	(
 	jadeMethodDefinitions
@@ -285,7 +340,12 @@ memberKeyDefinitions
 	(
 		lastName;
 	)
+	TransactionsByDateDict completeDefinition
+	(
+		date;
+	)
 inverseDefinitions
+	allTransactions of BankAccount automatic parentOf theAccount of Transaction manual;
 	allBankAccounts of Customer automatic peerOf myCustomer of BankAccount manual;
 
 databaseDefinitions
@@ -295,9 +355,13 @@ databaseDefinitions
 	databaseFileDefinitions
 		"simplebankaccount" number = 64;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:10:18:08.973;
-		"simplebankcustomer" number = 57;
+		"simplebankcustomer" number = 54;
 		setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:39:06.027;
-		"simplebankmodel" number = 62;
+		"simplebanktransactions" number = 63;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:29:20:39:20.903;
+		"transaction" number = 68;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:29:20:46:01.655;
+		"simplebankmodel" number = 53;
 		setModifiedTimeStamp "Philippa" "18.0.01" 2020:02:26:10:10:55.457;
 	defaultFileDefinition "simplebankmodel";
 	classMapDefinitions
@@ -308,11 +372,14 @@ databaseDefinitions
 		CurrentAccount in "simplebankaccount";
 		Customer in "simplebankcustomer";
 		CustomerByLastNameDict in "simplebankcustomer";
+		Deposit in "simplebankaccount";
 		GSimpleBankModel in "simplebankmodel";
 		GenericExceptionHandler in "simplebankmodel";
 		SSimpleBankModel in "_environ";
 		SavingsAccount in "simplebankaccount";
 		SimpleBankModel in "_usergui";
+		Transaction in "transaction";
+		TransactionsByDateDict in "simplebankaccount";
 	)
 typeSources
 	SimpleBankModel (
@@ -396,11 +463,29 @@ end;
 }
 deposit
 {
-deposit(amount: Decimal) updating;
+deposit(amount: Decimal; payorName: String; bankAccount: BankAccount; transName: String) updating;
+
+//used by DepositForm
+vars
+	deposit : Deposit;
+	date : Date;
+begin
+	//the more fleshed out version of the deposit method
+	beginTransaction;
+	self.balance := self.balance + amount;
+	//creates a Deposit object in memory
+	deposit := create Deposit(date.String, amount, payorName, bankAccount, transName);
+	commitTransaction;
+end;
+}
+editAccount
+{
+editAccount(newName: String) updating;
+
+vars
 
 begin
-	self.balance := self.balance + amount;
-
+	self.name := newName;
 end;
 }
 getBalance
@@ -839,6 +924,21 @@ begin
 	commitTransaction;
 end;
 }
+purgeTransactions
+{
+purgeTransactions();
+
+vars
+	instances : ObjectArray;
+begin
+	beginTransaction;
+	app.clearWriteWindow();
+	create instances transient;
+	Transaction.allInstances(instances, Max_Integer, true);
+	instances.purge();
+	commitTransaction;
+end;
+}
 testAutomatedInverseAssignment
 {
 testAutomatedInverseAssignment() updating;
@@ -1000,6 +1100,23 @@ begin
 	write message.toUpper();
 	write '"JADE" found at position ' & message.pos("JADE", 1).String;
 
+end;
+}
+	)
+	Deposit (
+	jadeMethodSources
+create
+{
+create(pDateString : String; pAmount : Decimal; pPayorName : String; pTheAccount : BankAccount; pName: String) updating;
+
+vars
+
+begin
+	self.date := pDateString.asDate();
+	self.amount := pAmount;	//spent almost 2 hours wondering why "amount" was 0 when inspected, then realised i had to write this line
+	self.payorName := pPayorName;	
+	self.theAccount := pTheAccount;
+	self.name := pName;
 end;
 }
 	)
