@@ -47,7 +47,7 @@
 		<bubbleHelp/>
 		<caption>Account</caption>
 		<clientHeight>416</clientHeight>
-		<clientWidth>759</clientWidth>
+		<clientWidth>760</clientWidth>
 		<clipControls>true</clipControls>
 		<controlBox>true</controlBox>
 		<description/>
@@ -60,7 +60,7 @@
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
 		<ignoreSkinAllControls>false</ignoreSkinAllControls>
-		<left>246</left>
+		<left>164</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -86,7 +86,7 @@
 		<showMdiPinMenu>false</showMdiPinMenu>
 		<skinCategoryName/>
 		<tag/>
-		<top>32</top>
+		<top>-22</top>
 		<userScript/>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
@@ -94,7 +94,7 @@
 		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
 		<webEncodingType/>
 		<webFileName/>
-		<width>775</width>
+		<width>776</width>
 		<windowState>0</windowState>
 		<controlList>
 			<Label name="lbaccountNumber_1">
@@ -136,7 +136,7 @@
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>337</parentBottomOffset>
-				<parentRightOffset>642</parentRightOffset>
+				<parentRightOffset>643</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -199,7 +199,7 @@
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>337</parentBottomOffset>
-				<parentRightOffset>410</parentRightOffset>
+				<parentRightOffset>411</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
 				<relativeHeight>false</relativeHeight>
@@ -261,7 +261,7 @@
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>-1</parentBottomOffset>
-				<parentRightOffset>334</parentRightOffset>
+				<parentRightOffset>335</parentRightOffset>
 				<picture>/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgMCAgMEAwMDBAUEBAQEBQcFBQUFBQcIBwcH
 BwcHCAgICAgICAgKCgoKCgoLCwsLCw0NDQ0NDQ0NDQ3/2wBDAQICAgMDAwYDAwYNCQcJDQ0NDQ0N
 DQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ3/wAARCAS0AGwDASIA
@@ -1172,7 +1172,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>18</parentBottomOffset>
-				<parentRightOffset>411</parentRightOffset>
+				<parentRightOffset>412</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -1225,7 +1225,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>120</parentBottomOffset>
-				<parentRightOffset>410</parentRightOffset>
+				<parentRightOffset>411</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -1243,67 +1243,6 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<visible>true</visible>
 				<width>310</width>
 			</GroupBox>
-			<Button name="btnAdd_1">
-				<autoSize>1</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483633</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<buttonPicture>0</buttonPicture>
-				<cancel>false</cancel>
-				<caption>Add</caption>
-				<default>false</default>
-				<description/>
-				<disableReason/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483630</foreColor>
-				<form name="Account" />
-				<height>22</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<ignoreSkin>false</ignoreSkin>
-				<index>0</index>
-				<left>480</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>btnAdd_1</name>
-				<parent name="Account" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>9</parentBottomOffset>
-				<parentRightOffset>191</parentRightOffset>
-				<picture/>
-				<pictureDisabled/>
-				<pictureDown/>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<style>0</style>
-				<tabIndex>24</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<top>385</top>
-				<userScript/>
-				<value>false</value>
-				<visible>true</visible>
-				<webFileName/>
-				<width>88</width>
-			</Button>
 			<Label name="lbTransactionList">
 				<alignment>1</alignment>
 				<autoSize>true</autoSize>
@@ -1343,7 +1282,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>361</parentBottomOffset>
-				<parentRightOffset>159</parentRightOffset>
+				<parentRightOffset>160</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -1401,7 +1340,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>238</parentBottomOffset>
-				<parentRightOffset>642</parentRightOffset>
+				<parentRightOffset>643</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -1464,7 +1403,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>238</parentBottomOffset>
-				<parentRightOffset>410</parentRightOffset>
+				<parentRightOffset>411</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
 				<relativeHeight>false</relativeHeight>
@@ -1535,7 +1474,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>271</parentBottomOffset>
-				<parentRightOffset>410</parentRightOffset>
+				<parentRightOffset>411</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
 				<relativeHeight>false</relativeHeight>
@@ -1606,7 +1545,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>304</parentBottomOffset>
-				<parentRightOffset>410</parentRightOffset>
+				<parentRightOffset>411</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
 				<relativeHeight>false</relativeHeight>
@@ -1672,7 +1611,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>271</parentBottomOffset>
-				<parentRightOffset>642</parentRightOffset>
+				<parentRightOffset>643</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -1730,7 +1669,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>304</parentBottomOffset>
-				<parentRightOffset>642</parentRightOffset>
+				<parentRightOffset>643</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -1780,14 +1719,14 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>610</left>
+				<left>548</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnReport</name>
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>10</parentBottomOffset>
-				<parentRightOffset>61</parentRightOffset>
+				<parentBottomOffset>9</parentBottomOffset>
+				<parentRightOffset>124</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -1803,7 +1742,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tabIndex>23</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>384</top>
+				<top>385</top>
 				<userScript/>
 				<value>false</value>
 				<visible>true</visible>
@@ -1848,7 +1787,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>494</parentBottomOffset>
-				<parentRightOffset>577</parentRightOffset>
+				<parentRightOffset>578</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -1909,7 +1848,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>494</parentBottomOffset>
-				<parentRightOffset>671</parentRightOffset>
+				<parentRightOffset>672</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -1970,7 +1909,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>494</parentBottomOffset>
-				<parentRightOffset>483</parentRightOffset>
+				<parentRightOffset>484</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -2035,7 +1974,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>50</parentBottomOffset>
-				<parentRightOffset>25</parentRightOffset>
+				<parentRightOffset>26</parentRightOffset>
 				<pictureClosed/>
 				<pictureLeaf/>
 				<pictureMinus/>
@@ -2101,7 +2040,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<parent name="Account" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>360</parentBottomOffset>
-				<parentRightOffset>612</parentRightOffset>
+				<parentRightOffset>613</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -2120,6 +2059,67 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<width>114</width>
 				<wordWrap>false</wordWrap>
 			</Label>
+			<Button name="btnClear">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Clear</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="Account" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>109</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnClear</name>
+				<parent name="searchTransactions" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>9</parentBottomOffset>
+				<parentRightOffset>111</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>37</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>60</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
 			<TextBox name="txtSearchTransactions">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
@@ -2222,14 +2222,14 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
 				<index>0</index>
-				<left>164</left>
+				<left>10</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnsearch_1</name>
 				<parent name="searchTransactions" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>9</parentBottomOffset>
-				<parentRightOffset>56</parentRightOffset>
+				<parentRightOffset>210</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -3391,7 +3391,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
 		<ignoreSkinAllControls>false</ignoreSkinAllControls>
-		<left>130</left>
+		<left>132</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -3417,7 +3417,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 		<showMdiPinMenu>false</showMdiPinMenu>
 		<skinCategoryName/>
 		<tag/>
-		<top>114</top>
+		<top>-13</top>
 		<userScript/>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
@@ -4947,6 +4947,67 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<width>89</width>
 				<wordWrap>false</wordWrap>
 			</Label>
+			<Button name="btnClear">
+				<autoSize>1</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Clear</caption>
+				<default>false</default>
+				<description/>
+				<disableReason/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="BrowseCustomers" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<index>0</index>
+				<left>199</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnClear</name>
+				<parent name="searchCustomers" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>43</parentBottomOffset>
+				<parentRightOffset>66</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>35</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>166</top>
+				<userScript/>
+				<value>false</value>
+				<visible>true</visible>
+				<webFileName/>
+				<width>88</width>
+			</Button>
 			<StatusLine name="statusLine1">
 				<alignment>0</alignment>
 				<autoSize>true</autoSize>
@@ -5048,7 +5109,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<name>btnsearch</name>
 				<parent name="searchCustomers" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>50</parentBottomOffset>
+				<parentBottomOffset>41</parentBottomOffset>
 				<parentRightOffset>213</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
@@ -5065,7 +5126,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<tabIndex>11</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>151</top>
+				<top>160</top>
 				<userScript/>
 				<value>false</value>
 				<visible>true</visible>
@@ -9647,7 +9708,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<webFileName/>
 				<width>128</width>
 			</Button>
-			<TextBox name="txtlastName">
+			<TextBox name="txtLoadXML">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
 				<backBrush/>
@@ -9687,7 +9748,7 @@ gM/jUbUUV0djCX2jvfiCfsXiKLw1bgLY6VZRJbJ6boFmcnsS7uSxxzxXvHgn/kU9M/64/wDsxoor
 				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
-				<name>txtlastName</name>
+				<name>txtLoadXML</name>
 				<parent name="LoadXML" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>134</parentBottomOffset>
@@ -13010,7 +13071,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<index>0</index>
 				<integralHeight>false</integralHeight>
 				<left>93</left>
-				<maxLength>11</maxLength>
+				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtAmount</name>
@@ -13203,7 +13264,7 @@ syVdCXGnSxRG5gYXFv8A89E7f7w6qfrWdWxb2uoWkvnW8io3qCeR6EY5H1rUj0tdVJUKlvchS2Uz
 				<index>0</index>
 				<integralHeight>false</integralHeight>
 				<left>93</left>
-				<maxLength>11</maxLength>
+				<maxLength>30</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtTransName</name>

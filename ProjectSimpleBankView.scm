@@ -11,10 +11,10 @@ typeHeaders
 	SimpleBankView subclassOf SimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2130;
 	GSimpleBankView subclassOf GSimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2138;
 	SSimpleBankView subclassOf SSimpleBankModel transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2139;
-	Account subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 26, number = 2157;
+	Account subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 27, number = 2157;
 	AccountAdd subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 12, number = 2159;
 	AccountEdit subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 7, number = 2110;
-	BrowseCustomers subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 15, number = 2090;
+	BrowseCustomers subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 16, number = 2090;
 	CustomerData subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 21, number = 2098;
 	CustomerDetails subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 15, number = 2140;
 	CustomerAdd subclassOf CustomerDetails transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 4, number = 2141;
@@ -109,12 +109,12 @@ typeDefinitions
 	)
 	Account completeDefinition
 	(
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:16:07:36.930;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:15:13:53.486;
 	referenceDefinitions
 		btnAdd:                        Button  number = 4, ordinal = 4;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:27:16:16:24.520;
-		btnAdd_1:                      Button  number = 7, ordinal = 7;
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:27:16:16:24.520;
+		btnClear:                      Button  number = 25, ordinal = 27;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:35:13.220;
 		btnDelete:                     Button  number = 3, ordinal = 3;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:27:16:16:24.520;
 		btnDeposit:                    Button  number = 9, ordinal = 9;
@@ -162,10 +162,20 @@ typeDefinitions
 	jadeMethodDefinitions
 		btnAdd_click(btn: Button input) updating, number = 1001;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:28:15:45:35.357;
+		btnClear_click(btn: Button input) updating, number = 1011;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:37:50.121;
 		btnDeposit_click(btn: Button input) updating, number = 1003;
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:14:34:58.662;
+		btnReport_click(btn: Button input) updating, number = 1010;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:40:47.812;
 		btnWithdraw_click(btn: Button input) updating, number = 1004;
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:14:35:50.896;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:14:59:14.457;
+		btnsearch_1_click(btn: Button input) updating, number = 1006;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:14:48:02.186;
+		displaySearchResults(listSearchResults: ObjectArray) updating, number = 1008;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:14:43:53.512;
+		exportCustomer(account: BankAccount) number = 1009;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:49:41.545;
 		listTransactions_displayRow(
 			listbox: ListBox input; 
 			transaction: Transaction; 
@@ -174,10 +184,15 @@ typeDefinitions
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:20:02:25.539;
 		load() updating, number = 1002;
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:19:45:50.446;
+		searchForTransByName(transNameToSearch: String): ObjectArray number = 1007;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:14:40:30.204;
 	eventMethodMappings
 		btnAdd_click = click of Button;
+		btnClear_click = click of Button;
 		btnDeposit_click = click of Button;
+		btnReport_click = click of Button;
 		btnWithdraw_click = click of Button;
+		btnsearch_1_click = click of Button;
 		listTransactions_displayRow = displayRow of ListBox;
 		load = load of Form;
 	)
@@ -255,10 +270,12 @@ typeDefinitions
 	)
 	BrowseCustomers completeDefinition
 	(
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:21:49:29.524;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:31:28.122;
 	referenceDefinitions
 		btnAdd:                        Button  number = 13, ordinal = 14;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:21:22:25:55.311;
+		btnClear:                      Button  number = 15, ordinal = 16;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:31:28.121;
 		btnEdit:                       Button  number = 11, ordinal = 11;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:19:21:53:25.853;
 		btnView:                       Button  number = 12, ordinal = 13;
@@ -288,6 +305,8 @@ typeDefinitions
 	jadeMethodDefinitions
 		btnAdd_click(btn: Button input) updating, number = 1005;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:21:22:26:48.995;
+		btnClear_click(btn: Button input) updating, number = 1010;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:33:54.181;
 		btnEdit_click(btn: Button input) updating, number = 1003;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:20:20:07:34.517;
 		btnView_click(btn: Button input) updating, number = 1004;
@@ -295,7 +314,7 @@ typeDefinitions
 		btnsearch_click(btn: Button input) updating, number = 1007;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:19:57:55.927;
 		displaySearchResults(listSearchResults: ObjectArray) updating, number = 1006;
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:50:56.084;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:14:48:54.962;
 		listCustomers_displayRow(
 			listbox: ListBox input; 
 			cust: Customer; 
@@ -310,6 +329,7 @@ typeDefinitions
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:19:59:51;
 	eventMethodMappings
 		btnAdd_click = click of Button;
+		btnClear_click = click of Button;
 		btnEdit_click = click of Button;
 		btnView_click = click of Button;
 		btnsearch_click = click of Button;
@@ -374,7 +394,7 @@ typeDefinitions
 			bankAccount: BankAccount; 
 			lstIndex: Integer; 
 			bcontinue: Boolean io): String updating, number = 1002;
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:49:10.391;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:16:02:53.394;
 		load() updating, number = 1001;
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:21:51:54.771;
 	eventMethodMappings
@@ -526,7 +546,7 @@ typeDefinitions
 	)
 	LoadXML completeDefinition
 	(
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:16:24:30.652;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:09:00:40.923;
 	referenceDefinitions
 		btnBack:                       Button  number = 4, ordinal = 4;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:16:15:06.426;
@@ -534,13 +554,16 @@ typeDefinitions
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:16:15:06.425;
 		lbPleaseEnterXML:              Label  number = 3, ordinal = 3;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:16:15:06.426;
-		txtlastName:                   TextBox  number = 1, ordinal = 1;
+		txtLoadXML:                    TextBox  number = 1, ordinal = 1;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:16:15:06.425;
 	jadeMethodDefinitions
 		btnBack_click(btn: Button input) updating, number = 1001;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:30:16:22:34.781;
+		btnsearch_click(btn: Button input) updating, number = 1002;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:09:02:06.920;
 	eventMethodMappings
 		btnBack_click = click of Button;
+		btnsearch_click = click of Button;
 	)
 	Main_Menu completeDefinition
 	(
@@ -574,7 +597,7 @@ typeDefinitions
 	)
 	Transactions completeDefinition
 	(
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:19:53:54.905;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:00:17:35.744;
 	referenceDefinitions
 		btnCancel:                     Button  number = 3, ordinal = 3;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:20:48:52.800;
@@ -592,16 +615,15 @@ typeDefinitions
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:19:35:56.925;
 		txtTransName:                  TextBox  number = 2, ordinal = 2;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:20:48:52.800;
-	jadeMethodDefinitions
-		invalidInputExceptionHandler(exObj: Exception): Integer number = 1001;
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:21:10:23.295;
 	)
 	DepositForm completeDefinition
 	(
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:21:20:35.486;
 	jadeMethodDefinitions
 		btnOK_click(btn: Button input) updating, number = 1001;
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:19:57:00.152;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:01:09:56.493;
+		updateAccountGUI() updating, number = 1002;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:15:12:49.711;
 	eventMethodMappings
 		btnOK_click = click of Button;
 	)
@@ -610,7 +632,7 @@ typeDefinitions
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:30:21:20:47.370;
 	jadeMethodDefinitions
 		btnOK_click(btn: Button input) updating, number = 1001;
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:19:35:56.914;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:01:10:15.157;
 	eventMethodMappings
 		btnOK_click = click of Button;
 	)
@@ -740,6 +762,19 @@ begin
 	form.show();
 end;
 }
+btnClear_click
+{
+btnClear_click(btn: Button input) updating;
+
+vars
+
+begin
+	txtSearchTransactions.text := "";
+	
+	listTransactions.clear();
+	listTransactions.displayCollection(self.thisFormsAccount.allTransactions, true, 0, null, "");
+end;
+}
 btnDeposit_click
 {
 btnDeposit_click(btn: Button input) updating;
@@ -753,6 +788,18 @@ begin
 	form.show();
 end;
 }
+btnReport_click
+{
+btnReport_click(btn: Button input) updating;
+
+vars
+	acc : BankAccount;
+begin
+	exportCustomer(acc);
+	
+	app.msgBox("Customer successfully exported", "Result", MsgBox_OK_Only);
+end;
+}
 btnWithdraw_click
 {
 btnWithdraw_click(btn: Button input) updating;
@@ -764,6 +811,127 @@ begin
 	
 	form.myAccount := self.thisFormsAccount;
 	form.show();
+end;
+}
+btnsearch_1_click
+{
+btnsearch_1_click(btn: Button input) updating;
+
+vars
+	listSearchResults : ObjectArray;
+begin
+	if txtSearchTransactions.text = null then
+		app.msgBox("Please enter either a transaction name or date!", "Error", MsgBox_OK_Only);
+	else
+		listSearchResults := searchForTransByName(txtSearchTransactions.text);
+		displaySearchResults(listSearchResults);
+	endif;
+end;
+}
+displaySearchResults
+{
+displaySearchResults(listSearchResults : ObjectArray) updating;
+
+vars
+
+begin
+	//clears the listbox
+	self.listTransactions.clear();
+	
+	/*this checks if the search returned any results, which
+	are stored in listSearchResults*/
+	if hasMembers(listSearchResults) = true then
+		self.listTransactions.displayCollection(listSearchResults, false, 
+		ListBox.DisplayCollection_Forward, null, "");
+	else
+		self.listTransactions.clear();
+		app.msgBox("No transactions with this name found", "", MsgBox_OK_Only);
+	endif;
+end;
+}
+exportCustomer
+{
+exportCustomer(account : BankAccount);
+
+vars
+
+doc : JadeXMLDocument;
+customer, firstName, 
+lastName ,phone, streetAddress, 
+number, suburb, city, creditScore, accountz : JadeXMLElement;
+
+overdraft , interest, balance : JadeXMLElement;
+
+transaction, transType, transName, transDate, transAmount, payeeName : JadeXMLElement;
+
+root 	 : 	Bank ;
+file : JadeXMLElement;
+cust : Customer;
+acc : BankAccount;
+trans : Transaction;
+begin
+	cust := self.thisFormsAccount.myCustomer;
+    root := Bank.firstInstance;
+	acc := self.thisFormsAccount;
+	create doc transient;
+	
+	file := doc.addElement("statement") ;
+	customer := file.addElement("customer") ;
+	number := customer.addElement("customer_number");
+	number.setText(self.thisFormsAccount.accountNumber.String);
+	firstName := customer.addElement("first_name") ;
+	firstName.setText(cust.firstName);
+	lastName := customer.addElement("last_name") ;
+	lastName.setText(cust.lastName) ;
+	phone := customer.addElement("phone") ;
+	phone.setText(cust.getPropertyValue('phone').String) ;
+	streetAddress := customer.addElement("street_address") ;
+	streetAddress.setText(cust.getPropertyValue('streetAddress').String) ;
+	suburb := customer.addElement("suburb");
+	suburb.setText(cust.getPropertyValue('suburb').String);
+	city := customer.addElement("city");
+	city.setText(cust.getPropertyValue('city').String);
+	creditScore := customer.addElement("credit_score");
+	creditScore.setText(cust.getPropertyValue('creditScore').String);	
+	//endtag
+	
+	accountz := file.addElement("account") ;
+	accountz.addAttribute("type", acc.getName());
+			if self.thisFormsAccount.getName() = "CurrentAccount" then
+				balance := accountz.addElement("balance");
+				balance.setText(acc.getBalance.String);
+				overdraft := accountz.addElement("overdraft_limit");
+				overdraft.setText(acc.Default_Overdraft_Limit.String);
+			else
+				balance := accountz.addElement("balance");
+				balance.setText(acc.getBalance.String);
+				interest := accountz.addElement("interest_rate") ;
+				interest.setText(acc.Default_Interest_Rate.String) ;
+			endif ;
+	foreach trans in acc.allTransactions do
+		transaction := file.addElement("transaction");
+		transType := transaction.addElement("transaction_type");
+		transType.setText(trans.getName());
+		transName := transaction.addElement("transaction_name");
+		transName.setText(trans.name);
+		transDate := transaction.addElement("transaction_date");
+		transDate.setText(trans.date.String);
+		transAmount := transaction.addElement("transaction_amount");
+		transAmount.setText(trans.amount.String);	
+		balance := transaction.addElement("balance");
+		balance.setText(acc.getBalance.String);
+		if trans.getName() = "Deposit" then
+			payeeName := transaction.addElement("payor_name");
+			payeeName.setText(trans.Deposit.payorName);
+		else
+			payeeName := transaction.addElement("withdrawer_name");
+			payeeName.setText(trans.Withdrawal.withdrawerName);
+		endif;
+	endforeach;
+	
+	doc.writeToFile("C:\Users\tagos\OneDrive\Documents\INFO213\INFO213 Course Project\XML Export Results\CustExport.xml");
+epilog
+	delete doc;
 end;
 }
 listTransactions_displayRow
@@ -796,6 +964,29 @@ begin
 	self.txtBalance.text := thisFormsAccount.getPropertyValue('balance').String;
 	
 	self.listTransactions.displayCollection(thisFormsAccount.allTransactions, true, ListBox.DisplayCollection_Forward, null, "");
+end;
+}
+searchForTransByName
+{
+searchForTransByName(transNameToSearch: String) : ObjectArray;
+
+vars
+	trans : Transaction;
+	iter : Iterator;
+	transToBeSearched : Collection;
+	searchResults: ObjectArray;
+begin
+	transToBeSearched := self.listTransactions.getCollection();
+	iter := transToBeSearched.createIterator();
+	searchResults := create ObjectArray transient;
+	while iter.next(trans) do
+		if transNameToSearch.toLower() = trans.name.toLower then
+			searchResults.add(trans);
+		endif;
+	endwhile;
+	return searchResults;
+epilog
+	delete iter;
 end;
 }
 	)
@@ -946,6 +1137,21 @@ begin
 	form.show();
 end;
 }
+btnClear_click
+{
+btnClear_click(btn: Button input) updating;
+
+vars
+
+begin
+	txtlastName.text := "";
+	txtAccountNumber.text := "";
+	
+	self.listCustomers.clear();
+	self.listCustomers.displayCollection(app.ourBank.allCustomers, true, ListBox.DisplayCollection_Forward, null, "");
+	statusLine1.caption := null;
+end;
+}
 btnEdit_click
 {
 btnEdit_click(btn: Button input) updating;
@@ -1028,7 +1234,7 @@ begin
 	if hasMembers(listSearchResults) = true then
 		self.listCustomers.displayCollection(listSearchResults, false, 
 		ListBox.DisplayCollection_Forward, null, "");
-		statusLine1.caption := "Customers found";
+		statusLine1.caption := "Customer(s) found";
 	else
 		self.listCustomers.clear();
 		statusLine1.caption := "No customers found";
@@ -1195,6 +1401,8 @@ listAccounts_displayRow(listbox: ListBox input; bankAccount: BankAccount; lstInd
 vars
 
 begin
+	
+	
 	//displays: "account name, account number, $_______"
 	return bankAccount.name
 	& ": " & bankAccount.accountNumber.String
@@ -1499,6 +1707,21 @@ begin
 	self.unloadForm();
 end;
 }
+btnsearch_click
+{
+btnsearch_click(btn: Button input) updating;
+
+vars
+	xmlExc: XMLException;
+begin
+	on XMLException do 
+		app.genericExceptionHandler(exception, "This file does not exist");
+		if self.txtLoadXML.text <> "PeopleImport.xml" then
+			create xmlExc transient;
+			raise xmlExc;
+		endif;
+end;
+}
 	)
 	Main_Menu (
 	jadeMethodSources
@@ -1560,32 +1783,6 @@ begin
 end;
 }
 	)
-	Transactions (
-	jadeMethodSources
-invalidInputExceptionHandler
-{
-invalidInputExceptionHandler(exObj : Exception) : Integer;
-
-vars
-	errsfile : String;
-begin
-	errsfile := currentSchema.name & "_errs.log";
-	
-		if exObj.errorCode = 64000 then
-			
-			abortTransaction;
-			exObj.logSelf(errsfile);
-			app.msgBox("Unexpected error (" & exObj.errorCode.String & ") occurred - see " &
-	errsfile & " for details." &
-	CrLf & CrLf &
-	"We sincerely apologise you had to see this. OMG - this is so embarassing! :(",
-	"Application Error", MsgBox_OK_Only);
-	return Ex_Abort_Action;
-	endif;
-			
-end;
-}
-	)
 	DepositForm (
 	jadeMethodSources
 btnOK_click
@@ -1594,10 +1791,27 @@ btnOK_click(btn: Button input) updating;
 
 vars
 	payorName : String;
+	depositEx : InvalidDepositAmountException;
 begin
-	payorName := myAccount.myCustomer.getFullName();
-	self.myAccount.deposit(txtAmount.text.Decimal, payorName, self.myAccount, txtTransName.text);
+	on InvalidDepositAmountException do
+		app.genericExceptionHandler(exception, "Please enter valid/positive amount!");
+	if self.txtAmount.text.Real <= 0 then
+		create depositEx transient;
+		raise depositEx;
+	else	
+		payorName := myAccount.myCustomer.getFullName();
+		self.myAccount.deposit(txtAmount.text.Decimal, payorName, self.myAccount, txtTransName.text);
+	endif;
 	self.unloadForm();
+end;
+}
+updateAccountGUI
+{
+updateAccountGUI(accountForm: Account) updating;
+
+vars
+begin
+	accountForm.txtBalance.text := myAccount.getBalance().String;
 end;
 }
 	)
@@ -1608,11 +1822,18 @@ btnOK_click
 btnOK_click(btn: Button input) updating;
 
 vars
-	amount : Real;
+	withdrawerName : String;
+	withdrawEx : InvalidWithdrawAmountException;
 begin
-	amount := txtTransName.text.Real;
-	self.myAccount.withdraw(amount);
-	
+	on InvalidWithdrawAmountException do
+		app.genericExceptionHandler(exception, "Not enough funds in account!");
+	if self.txtAmount.text.Real > self.myAccount.getBalance + self.myAccount.Default_Overdraft_Limit then
+		create withdrawEx transient;
+		raise withdrawEx;
+	else
+		withdrawerName := self.myAccount.myCustomer.getFullName();
+		self.myAccount.withdraw(txtAmount.text.Decimal, withdrawerName, self.myAccount, txtTransName.text);
+	endif;
 	self.unloadForm();
 end;
 }

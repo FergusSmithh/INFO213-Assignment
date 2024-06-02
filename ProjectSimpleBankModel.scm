@@ -15,10 +15,13 @@ typeHeaders
 	SavingsAccount subclassOf BankAccount highestOrdinal = 1, number = 2123;
 	BankXML subclassOf Object number = 2164;
 	Customer subclassOf Object highestSubId = 1, highestOrdinal = 12, number = 2124;
-	GenericExceptionHandler subclassOf NormalException transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2160;
+	InvalidDepositAmountException subclassOf NormalException transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2160;
+	InvalidWithdrawAmountException subclassOf NormalException transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2112;
+	XMLException subclassOf NormalException transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2113;
 	GSimpleBankModel subclassOf GAssignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2126;
 	Transaction subclassOf Object abstract, highestOrdinal = 4, number = 2107;
 	Deposit subclassOf Transaction highestOrdinal = 1, number = 2109;
+	Withdrawal subclassOf Transaction highestOrdinal = 1, number = 2111;
 	SSimpleBankModel subclassOf SAssignment transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2127;
 	BankAccountByNumberDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2128;
 	CustomerByLastNameDict subclassOf MemberKeyDictionary duplicatesAllowed, loadFactor = 66, number = 2129;
@@ -48,6 +51,10 @@ typeDefinitions
 		ourBank:                       Bank  readonly, number = 1, ordinal = 1;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:19:14:04:41.264;
 	jadeMethodDefinitions
+		genericExceptionHandler(
+			excObj: Exception; 
+			message: String): Integer updating, number = 1002;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:00:22:55.932;
 		initialize() updating, number = 1001;
 		setModifiedTimeStamp "cza14" "22.0.01" 2024:05:06:15:47:16.789;
 	)
@@ -103,13 +110,17 @@ without inverses and requires manual maintenance.`
 			payorName: String; 
 			bankAccount: BankAccount; 
 			transName: String) updating, number = 1003;
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:58:39.222;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:15:05:10.754;
 		editAccount(newName: String) updating, number = 1006;
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:41:55.353;
 		getBalance(): Decimal number = 1004;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:15:22:44.932;
-		withdraw(amount: Decimal) updating, number = 1005;
-		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:25:20:20:53.530;
+		withdraw(
+			amount: Decimal; 
+			withdrawerName: String; 
+			bankAccount: BankAccount; 
+			transName: String) updating, number = 1005;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:15:05:26.272;
 	)
 	CurrentAccount completeDefinition
 	(
@@ -200,12 +211,26 @@ without inverses and requires manual maintenance.`
 	NormalException completeDefinition
 	(
 	)
-	GenericExceptionHandler completeDefinition
+	InvalidDepositAmountException completeDefinition
 	(
-		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:20:38:26.612;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:00:23:26.529;
 	jadeMethodDefinitions
 		create() updating, protected, number = 1001;
 		setModifiedTimeStamp "Fergus" "22.0.03" 2024:05:29:20:50:35.333;
+	)
+	InvalidWithdrawAmountException completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:00:23:37.497;
+	jadeMethodDefinitions
+		create() updating, protected, number = 1001;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:00:24:57.762;
+	)
+	XMLException completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:00:23:49.193;
+	jadeMethodDefinitions
+		create() updating, protected, number = 1001;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:00:25:13.310;
 	)
 	Global completeDefinition
 	(
@@ -242,6 +267,8 @@ without inverses and requires manual maintenance.`
 		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:36:42.271;
 		testAutomatedInverseAssignment() updating, number = 1010;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:20:17:09:56.489;
+		testXMLFiles() number = 1018;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:23:18:23.741;
 		workingDecimalType() number = 1003;
 		setModifiedTimeStamp "cza14" "22.0.03" 2024:03:11:12:50:24.635;
 		workingWithDatesAndTimes() number = 1005;
@@ -278,7 +305,22 @@ without inverses and requires manual maintenance.`
 			pPayorName: String; 
 			pTheAccount: BankAccount; 
 			pName: String) updating, number = 1001;
-		setModifiedTimeStamp "tagos" "22.0.03" 2024:05:31:22:59:55.578;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:02:15:04:42.882;
+	)
+	Withdrawal completeDefinition
+	(
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:14:52:40.165;
+	attributeDefinitions
+		withdrawerName:                String[31] readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:14:53:19.822;
+	jadeMethodDefinitions
+		create(
+			pDateString: String; 
+			pAmount: Decimal; 
+			pWithdrawerName: String; 
+			pTheAccount: BankAccount; 
+			pName: String) updating, number = 1001;
+		setModifiedTimeStamp "tagos" "22.0.03" 2024:06:01:15:02:38.961;
 	)
 	WebSession completeDefinition
 	(
@@ -374,16 +416,32 @@ databaseDefinitions
 		CustomerByLastNameDict in "simplebankcustomer";
 		Deposit in "simplebankaccount";
 		GSimpleBankModel in "simplebankmodel";
-		GenericExceptionHandler in "simplebankmodel";
+		InvalidDepositAmountException in "simplebankmodel";
+		InvalidWithdrawAmountException in "simplebankmodel";
 		SSimpleBankModel in "_environ";
 		SavingsAccount in "simplebankaccount";
 		SimpleBankModel in "_usergui";
 		Transaction in "transaction";
 		TransactionsByDateDict in "simplebankaccount";
+		Withdrawal in "simplebankaccount";
+		XMLException in "simplebankmodel";
 	)
 typeSources
 	SimpleBankModel (
 	jadeMethodSources
+genericExceptionHandler
+{
+genericExceptionHandler(excObj: Exception; message : String) : Integer updating;
+
+vars
+	errsFile : String;
+begin
+	abortTransaction;
+	errsFile := currentSchema.name & "_errs.log";
+	app.msgBox(message, "Error", MsgBox_OK_Only);
+	return Ex_Abort_Action;
+end;
+}
 initialize
 {
 /*
@@ -472,9 +530,9 @@ vars
 begin
 	//the more fleshed out version of the deposit method
 	beginTransaction;
-	self.balance := self.balance + amount;
 	//creates a Deposit object in memory
 	deposit := create Deposit(date.String, amount, payorName, bankAccount, transName);
+	self.balance := self.balance + amount;
 	commitTransaction;
 end;
 }
@@ -501,12 +559,17 @@ end;
 }
 withdraw
 {
-withdraw(amount: Decimal) updating;
-
+withdraw(amount: Decimal; withdrawerName: String; bankAccount: BankAccount; transName: String) updating;
+vars
+	withdrawal : Withdrawal;
+	date : Date;
 begin
 
 	if self.canWithdraw(amount) then
+		beginTransaction;
+		withdrawal := create Withdrawal(date.String, amount, withdrawerName, bankAccount, transName);
 		self.balance := self.balance - amount;
+		commitTransaction;
 	endif;
 
 end;
@@ -708,7 +771,7 @@ begin
 end;
 }
 	)
-	GenericExceptionHandler (
+	InvalidDepositAmountException (
 	jadeMethodSources
 create
 {
@@ -716,6 +779,32 @@ create() updating, protected;
 
 begin
 self.errorCode := 64000;
+end;
+}
+	)
+	InvalidWithdrawAmountException (
+	jadeMethodSources
+create
+{
+create() updating, protected;
+
+vars
+
+begin
+	self.errorCode := 64000;
+end;
+}
+	)
+	XMLException (
+	jadeMethodSources
+create
+{
+create() updating, protected;
+
+vars
+
+begin
+	self.errorCode := 64000;
 end;
 }
 	)
@@ -1001,6 +1090,16 @@ begin
 	endif;
 end;
 }
+testXMLFiles
+{
+testXMLFiles();
+
+vars
+
+begin
+
+end;
+}
 workingDecimalType
 {
 workingDecimalType();
@@ -1115,6 +1214,24 @@ begin
 	self.date := pDateString.asDate();
 	self.amount := pAmount;	//spent almost 2 hours wondering why "amount" was 0 when inspected, then realised i had to write this line
 	self.payorName := pPayorName;	
+	self.theAccount := pTheAccount;
+	self.name := pName;
+	
+end;
+}
+	)
+	Withdrawal (
+	jadeMethodSources
+create
+{
+create(pDateString : String; pAmount : Decimal; pWithdrawerName : String; pTheAccount : BankAccount; pName: String) updating;
+
+vars
+
+begin
+	self.date := pDateString.asDate();
+	self.amount := pAmount;
+	self.withdrawerName := pWithdrawerName;	
 	self.theAccount := pTheAccount;
 	self.name := pName;
 end;
